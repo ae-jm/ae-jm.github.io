@@ -42,7 +42,7 @@ header ul > li {
 }
 
 section.area1 {
-	margin-left:20px
+	margin-left:20px;
     border: 1px solid lightgray;
     width: 600px;
     float: center; 
@@ -51,8 +51,6 @@ section.area1 {
 ul.dot2 {
     color: black;
     list-style-type: none;
-    float:right; 
-    margin:20px 0 0 0;
 }
 
 footer { 
