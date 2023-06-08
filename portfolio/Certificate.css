@@ -29,6 +29,7 @@ section {
 ul.dot2 {
     color: black;
     list-style-type: none;
+    display:inline;
     float:right; 
     margin:20px 0 0 0;
 }
