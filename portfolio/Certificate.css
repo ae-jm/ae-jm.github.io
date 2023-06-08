@@ -12,6 +12,7 @@ body {
 div.menubar {
 	width: 1440px;
 	margin: 0 auto;
+	margin-bottom: 100px;
 }
 header {
     width: 100;
