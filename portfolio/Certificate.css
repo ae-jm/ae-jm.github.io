@@ -47,6 +47,7 @@ div.content {
 	float: center;
 	width: 800px;
 	margin: 50px;
+	margin-bottom: 100px;
 }
 div section#box {
 /* 	display: flex;
@@ -59,6 +60,8 @@ div section#box {
 	text-align: center;
 }
 section#area1 {
+	width: 800px;
+	padding: 50px;
 	font-family: 'Gowun Dodum', sans-serif;
 }
 
