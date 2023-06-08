@@ -43,14 +43,15 @@ header ul > li {
 	align-items: center;
 }
 
-section {
+div.content {
 	float: center;
 	width: 800px;
 	margin: 50px;
+}
+section#box {
 	border: solid 1px gray;
 	text-align: center;
 }
-
 section#area1 {
 	font-family: 'Gowun Dodum', sans-serif;
 }
