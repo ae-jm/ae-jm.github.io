@@ -41,8 +41,12 @@ header ul > li {
 	align-items: center;
 }
 
+section {
+	float : center;
+	text-align: center;
+}
 section.area1 {
-	margin-left:20px;
+	margin-left: 20px;
     border: 1px solid lightgray;
     width: 600px;
     float: center; 
