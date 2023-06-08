@@ -12,7 +12,7 @@ body {
 div.menubar {
 	width: 1440px;
 	margin: 0 auto;
-	margin-bottom: 100px;
+	margin-bottom: 70px;
 }
 header {
 	font-family: 'DM Serif Display', serif;
@@ -43,12 +43,12 @@ header ul > li {
 	align-items: center;
 }
 
-/* div.content {
+div.content {
 	float: center;
 	width: 800px;
 	margin: 50px;
 	margin-bottom: 100px;
-} */
+}
 div section#box {
 /* 	display: flex;
 	justify-content: center; */
