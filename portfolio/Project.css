@@ -43,13 +43,27 @@ header ul > li {
 	align-items: center;
 }
 
-section#area1 {
+div.content {
 	float: center;
-	font-family: 'Gowun Dodum', sans-serif;
-	margin-left: 20px;
-    border: solid 1px gray;
-    width: 600px;
+	width: 800px;
+	margin: 50px;
+	margin-bottom: 100px;
+}
+div section#box {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	border: solid 1px gray;
 	text-align: center;
+	margin-bottom: 100px;
+}
+section#area1 {
+	width: 800px;
+	padding: 50px;
+	font-family: 'Gowun Dodum', sans-serif;
 }
 
 ul.dot2 {
