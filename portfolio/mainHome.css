@@ -1,5 +1,6 @@
 /* cdn import */
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=IBM+Plex+Sans+KR:wght@200&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital@1&display=swap');
+
 div.container1 {
     float:left;
     background-color: lightgray;
@@ -26,10 +27,21 @@ nav.font1 {
 }
 aside.font2 {
     color: white;
-    font-family: 'Gowun Dodum', sans-serif;
     text-align: justify;
     letter-spacing: -1px;
-    font-size: 40px;
+    font-size: 38px;
+}
+a.item1 {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+a.item2 {
+    font-family: 'Playfair Display', serif;
+}
+a.item3 {
+    font-family: 'IBM Plex Sans KR', sans-serif;
+}
+a.item4 {
+    font-family: 'DM Serif Display', serif;
 }
 [class*="col-"]{ width:100%; }
 @media only screen and (max-width:600px){  /*for tablets*/
