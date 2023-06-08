@@ -1,15 +1,19 @@
 /* cdn import */
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
-section#left {
+div.container1 {
     background-color: lightgray;
     width:40%;
+}
+div.container2 {
+    background-color: black;
+    width:60%;
+}
+section#left {
     margin-top: 300px;
     margin-bottom: 200px;
 }
 section#right {
     font-family: 'Gowun Dodum', sans-serif;
-    background-color: black;
-    width:60%;
     margin: 300px;
 }
 nav.font1 {
