@@ -65,13 +65,18 @@ section#area1 {
 	padding: 50px;
 	font-family: 'Gowun Dodum', sans-serif;
 }
+section#area2 {
+	width: 800px;
+	padding: 50px;
+	font-family: 'Gowun Dodum', sans-serif;
+}
 
 ul.dot2 {
     color: black;
     list-style-type: none;
 }
 
-footer { 
+div footer { 
 	font-family: 'Gowun Dodum', sans-serif;
     margin: 5px; 
     padding: 8px; 
