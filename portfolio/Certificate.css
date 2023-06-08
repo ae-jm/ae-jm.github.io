@@ -22,11 +22,12 @@ header {
     justify-content: space-between;
 }
 header > h2 {
-	margin-left:10px;
+	margin-left: 10px;
 }
 header > nav {
-	width:500px;
-	height:100%;
+	width: 500px;
+	height: 100%;
+	margin-right: 10px;
 }
 header ul {
 	width: 100%;
