@@ -9,6 +9,14 @@ body {
     -o-background-size: cover;
 }
 
+div#container1 {
+    float: left;
+}
+
+div#container2 {
+    float: right;
+}
+
 section#left {
     margin-top: 300px;
     margin-bottom: 200px;
