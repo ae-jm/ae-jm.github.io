@@ -65,6 +65,10 @@ section#area1 {
 	padding: 50px;
 	font-family: 'Gowun Dodum', sans-serif;
 }
+img {
+	width: 440px;
+	height: 230px;
+}
 
 ul.dot2 {
     color: black;
