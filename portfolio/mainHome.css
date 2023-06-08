@@ -32,12 +32,12 @@ nav.font1 {
     letter-spacing: 2px;
 }
 aside.font2 {
-    color: white;
     text-align: justify;
     letter-spacing: -1px;
     font-size: 38px;
 }
 ul.dot1 {
+    color: white;
     list-style-type: none;
 }
 li.item1 {
@@ -52,6 +52,9 @@ li.item3 {
 li.item4 {
     font-family: 'DM Serif Display', serif;
 }
+a:link { color:white; background-color:transparent; text-decoration:none; }
+a:visited { color:white; background-color:transparent; text-decoration:none; }
+a:hover { color:white; background-color:transparent; text-decoration:underline; }
 [class*="col-"]{ width:100%; }
 @media only screen and (max-width:600px){  /*for tablets*/
 .col-t-1{ width:8.33%; }  .col-t-2{ width:16.66%; }  .col-t-3{ width:25%; }  .col-t-4{ width:33.33%; }
