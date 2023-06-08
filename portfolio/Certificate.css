@@ -22,8 +22,9 @@ footer {
     width:1000px; 
 }
 
-section { 
-  width:600px; float:left; 
+section.area1 { 
+  width:600px;
+  float:center; 
 }
 
 ul.dot2 {
