@@ -1,0 +1,16 @@
+/* cdn import */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+body {
+    font-family: 'Gowun Dodum', sans-serif;
+    background-color: black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+section {
+    margin-bottom: 300px;
+}
+aside {
+  background-color: lightgray;
+}
