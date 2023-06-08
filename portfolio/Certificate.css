@@ -43,13 +43,7 @@ header ul > li {
 	align-items: center;
 }
 
-div.content {
-	float: center;
-	width: 800px;
-	margin: 50px;
-	margin-bottom: 100px;
-}
-div section#box {
+section#box {
 	display: flex;
 	justify-content: center;
 	position: absolute;
