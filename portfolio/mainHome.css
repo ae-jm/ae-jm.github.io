@@ -33,9 +33,9 @@ nav.font1 {
     letter-spacing: 2px;
 }
 nav a.font2 {
-    font-weight: bold;
-    font-size: 30px;
-    letter-spacing: 10px;
+    font-weight: 800;
+    font-size: 50px;
+    letter-spacing: 20px;
 }
 
 aside.font2 {
