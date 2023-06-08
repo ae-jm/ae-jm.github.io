@@ -1,16 +1,14 @@
 /* cdn import */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&family=IBM+Plex+Sans+KR:wght@200&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital@1&display=swap');
 
-div.container1 {
-    float:left;
-    background-color: lightgray;
-    width:47%;
+body {
+    background-image: linear-gradient(to right, black 47%, lightgray 53%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
-div.container2 {
-    float:right;
-    background-color: black;
-    width:53%;
-}
+
 section#left {
     margin-top: 300px;
     margin-bottom: 200px;
