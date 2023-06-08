@@ -47,7 +47,7 @@ section {
 }
 section.area1 {
 	margin-left: 20px;
-    border: 1px solid lightgray;
+    border: solid 1px gray;
     width: 600px;
     float: center; 
 }
