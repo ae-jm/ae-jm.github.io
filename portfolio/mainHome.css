@@ -10,12 +10,11 @@ body {
 }
 
 div#container1 {
-    width:50%
+    margin-right: 100px
     float: left;
 }
 
 div#container2 {
-    width:50%
     float: right;
 }
 
