@@ -50,8 +50,8 @@ div.content {
 	margin-bottom: 100px;
 }
 div section#box {
-/* 	display: flex;
-	justify-content: center; */
+	display: flex;
+	justify-content: center;
 	position: absolute;
     top: 50%;
     left: 50%;
