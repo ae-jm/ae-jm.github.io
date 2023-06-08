@@ -32,6 +32,11 @@ nav.font1 {
     text-align: center;
     letter-spacing: 2px;
 }
+nav a.font2 {
+    font-size: 30px;
+    letter-spacing: 10px;
+}
+
 aside.font2 {
     text-align: justify;
     letter-spacing: -1px;
@@ -53,6 +58,7 @@ li.item3 {
 li.item4 {
     font-family: 'DM Serif Display', serif;
 }
+
 a:link { color:white; background-color:transparent; text-decoration:none; }
 a:visited { color:white; background-color:transparent; text-decoration:none; }
 a:hover { color:white; background-color:transparent; text-decoration:underline; }
