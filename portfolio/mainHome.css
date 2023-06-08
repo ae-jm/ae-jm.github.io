@@ -1,10 +1,12 @@
 /* cdn import */
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
 div.container1 {
+    float:left;
     background-color: lightgray;
     width:40%;
 }
 div.container2 {
+    float:right;
     background-color: black;
     width:60%;
 }
