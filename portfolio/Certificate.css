@@ -48,7 +48,8 @@ div.content {
 	width: 800px;
 	margin: 50px;
 }
-section#box {
+div section#box {
+	float: center;
 	border: solid 1px gray;
 	text-align: center;
 }
