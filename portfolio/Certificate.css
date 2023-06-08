@@ -43,12 +43,12 @@ header ul > li {
 	align-items: center;
 }
 
-div.content {
+/* div.content {
 	float: center;
 	width: 800px;
 	margin: 50px;
 	margin-bottom: 100px;
-}
+} */
 div section#box {
 /* 	display: flex;
 	justify-content: center; */
@@ -58,6 +58,7 @@ div section#box {
     transform: translate(-50%, -50%);
 	border: solid 1px gray;
 	text-align: center;
+	margin-bottom: 100px;
 }
 section#area1 {
 	width: 800px;
