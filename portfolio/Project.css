@@ -49,9 +49,9 @@ div.content {
 	margin: 50px;
 	margin-bottom: 150px;
 }
-section#box {
-/* 	display: flex;
-	justify-content: center; */
+div section#box {
+	display: flex;
+	justify-content: center;
 	position: absolute;
     top: 50%;
     left: 50%;
