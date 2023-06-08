@@ -43,7 +43,7 @@ header ul > li {
 	align-items: center;
 }
 
-.table-style {
+table.table-style {
     border-collapse: collapse;
     margin: 25px 0;
     font-size: 0.9em;
