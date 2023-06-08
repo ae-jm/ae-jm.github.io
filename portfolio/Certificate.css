@@ -9,8 +9,17 @@ body {
     -o-background-size: cover;
 }
 
-header, section, footer { 
-  border:1px solid gray; margin:5px; padding:8px; width:1000px; 
+header, section {
+    border: 1px solid light;
+    margin:5px; 
+    padding:8px; 
+    width:1000px;
+}
+
+footer { 
+    margin:5px; 
+    padding:8px; 
+    width:1000px; 
 }
 
 section { 
@@ -18,13 +27,13 @@ section {
 }
 
 ul.dot1 {
-    color: white;
+    color: black;
     list-style-type: none;
 }
 
 footer { 
   height:50px; clear:both; 
 }
-a:link { color:white; background-color:transparent; text-decoration:none; }
-a:visited { color:white; background-color:transparent; text-decoration:none; }
-a:hover { color:white; background-color:transparent; text-decoration:underline; }
+a:link { color:black; background-color:transparent; text-decoration:none; }
+a:visited { color:black; background-color:transparent; text-decoration:none; }
+a:hover { color:black; background-color:transparent; text-decoration:underline; }
