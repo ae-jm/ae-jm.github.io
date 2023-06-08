@@ -10,7 +10,7 @@ body {
 }
 
 header, section {
-    border: 1px solid light;
+    border: 1px solid lightgray;
     margin:5px; 
     padding:8px; 
     width:1000px;
@@ -26,7 +26,7 @@ section {
   width:750px; float:left; 
 }
 
-ul.dot1 {
+ul.dot2 {
     color: black;
     list-style-type: none;
 }
