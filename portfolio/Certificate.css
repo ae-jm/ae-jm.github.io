@@ -19,8 +19,8 @@ header {
     width: 100;
     height: 80px;
     display: flex;
-/*     align-items: center;
-    justify-content: space-between; */
+    align-items: center;
+    justify-content: space-between;
 }
 header > h2 {
 	margin-left: 10px;
@@ -43,10 +43,8 @@ header ul > li {
 	align-items: center;
 }
 
-section {
-	float : center;
-}
 section#area1 {
+	float: center;
 	font-family: 'Gowun Dodum', sans-serif;
 	margin-left: 20px;
     border: solid 1px gray;
