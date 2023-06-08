@@ -44,6 +44,7 @@ header ul > li {
 }
 
 div.content {
+	display: flex;
 	float: center;
 	width: 800px;
 	margin: 50px;
@@ -81,6 +82,7 @@ ul.dot2 {
 }
 
 div footer { 
+	display: flex;
 	font-family: 'Gowun Dodum', sans-serif;
     margin: 5px; 
     padding: 8px; 
