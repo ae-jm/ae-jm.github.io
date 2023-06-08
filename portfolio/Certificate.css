@@ -9,7 +9,7 @@ body {
     -o-background-size: cover;
 }
 
-header, section#box {
+section#box {
     border: 1px solid lightgray;
     margin:5px; 
     padding:8px; 
