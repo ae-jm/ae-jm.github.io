@@ -76,6 +76,16 @@ ul.dot2 {
     list-style-type: none;
 }
 
+div footer { 
+	display: flex;
+	font-family: 'Gowun Dodum', sans-serif;
+    margin: 5px; 
+    padding: 8px; 
+    width: 1000px; 
+    height: 50px; 
+    clear: both;
+}
+
 a:link { color:black; background-color:transparent; text-decoration:none; }
 a:visited { color:black; background-color:transparent; text-decoration:none; }
 a:hover { color:black; background-color:transparent; text-decoration:underline; }
