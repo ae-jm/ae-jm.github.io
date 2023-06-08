@@ -3,12 +3,12 @@
 div.container1 {
     float:left;
     background-color: lightgray;
-    width:40%;
+    width:47%;
 }
 div.container2 {
     float:right;
     background-color: black;
-    width:60%;
+    width:53%;
 }
 section#left {
     margin-top: 300px;
@@ -28,5 +28,6 @@ aside.font2 {
     color: white;
     font-family: 'Gowun Dodum', sans-serif;
     text-align: justify;
-    letter-spacing: -1px
+    letter-spacing: -1px;
+    font-size: 40px;
 }
