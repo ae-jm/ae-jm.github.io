@@ -17,18 +17,13 @@ section {
   width:750px; float:left; 
 }
 
-aside {
-  width:221px; float:left; line-height:30px; 
-}
-footer { 
-  height:50px; clear:both; 
+ul.dot1 {
+    color: white;
+    list-style-type: none;
 }
 
-aside ul { 
-  margin:0; padding:0; 
-}
-aside ul li { 
-  dispaly:block; margin:5px 
+footer { 
+  height:50px; clear:both; 
 }
 a:link { color:white; background-color:transparent; text-decoration:none; }
 a:visited { color:white; background-color:transparent; text-decoration:none; }
