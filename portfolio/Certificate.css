@@ -46,7 +46,7 @@ section {
 	float : center;
 	text-align: center;
 }
-section.area1 {
+section#area1 {
 	margin-left: 20px;
     border: solid 1px gray;
     width: 600px;
