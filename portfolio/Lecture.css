@@ -79,15 +79,6 @@ details[open] > summary ~ * { animation:reveal 0.5s;}
     to { opacity:1; transform:translate3d(0, 0, 0); }
 }
 
-footer { 
-	font-family: 'Gowun Dodum', sans-serif;
-    margin: 5px; 
-    padding: 8px; 
-    width: 1000px; 
-    height: 50px; 
-    clear: both;
-}
-
 a:link { color:black; background-color:transparent; text-decoration:none; }
 a:visited { color:black; background-color:transparent; text-decoration:none; }
 a:hover { color:black; background-color:transparent; text-decoration:underline; }
