@@ -1,0 +1,70 @@
+/* cdn import */
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap&family=DM+Serif+Display:ital@1&family=IBM+Plex+Sans+KR:wght@200&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital@1&display=swap');
+
+body {
+    background-color: white;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+div.menubar {
+	width: 1440px;
+	margin: 0 auto;
+	margin-bottom: 100px;
+}
+header {
+    width: 100;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header > h2 {
+	margin-left:10px;
+}
+header > nav {
+	width:500px;
+	height:100%;
+}
+header ul {
+	width: 100%;
+	height: 100%;
+/* 	display: flex;
+	justify-content: space-between; */
+}
+header ul > li {
+	font-size: 18px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+section {
+	float : center;
+	text-align: center;
+}
+section.area1 {
+	margin-left: 20px;
+    border: solid 1px gray;
+    width: 600px;
+    float: center; 
+}
+
+ul.dot2 {
+    color: black;
+    list-style-type: none;
+}
+
+footer { 
+    margin: 5px; 
+    padding: 8px; 
+    width: 1000px; 
+    height: 50px; 
+    clear: both;
+}
+
+a:link { color:black; background-color:transparent; text-decoration:none; }
+a:visited { color:black; background-color:transparent; text-decoration:none; }
+a:hover { color:black; background-color:transparent; text-decoration:underline; }
