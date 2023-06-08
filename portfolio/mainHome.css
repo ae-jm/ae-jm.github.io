@@ -33,6 +33,7 @@ nav.font1 {
     letter-spacing: 2px;
 }
 nav a.font2 {
+    font-weight: bold;
     font-size: 30px;
     letter-spacing: 10px;
 }
