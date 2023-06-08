@@ -16,10 +16,8 @@ header, section#box {
     width:1000px;
 }
 
-footer { 
-    margin:5px; 
-    padding:8px; 
-    width:1000px; 
+nav {
+    
 }
 
 section.area1 { 
@@ -36,8 +34,13 @@ ul.dot2 {
 }
 
 footer { 
-  height:50px; clear:both; 
+    margin:5px; 
+    padding:8px; 
+    width:1000px; 
+    height:50px; 
+    clear:both; 
 }
+
 a:link { color:black; background-color:transparent; text-decoration:none; }
 a:visited { color:black; background-color:transparent; text-decoration:none; }
 a:hover { color:black; background-color:transparent; text-decoration:underline; }
