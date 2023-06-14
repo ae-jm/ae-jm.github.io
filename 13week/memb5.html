@@ -4,7 +4,7 @@
     <meta charset="utf-8"/>
     <style>
       * { padding:0; margin:0; }
-      #section0 { width:270px; height:125px; border:solid 1px lightgray; border-radius:1em;
+      #section0 { width:270px; height:125px; border:solid 1px lightgray; margin:10px; padding:10px; border-radius:1em;
       box-shadow:9px 6px 6px gray; }
       ul { list-style:none; }
       ul.level_1 > li { display:inline-block; line-height:1.5em; }
@@ -18,7 +18,7 @@
   <body>
     <section id="section0">
       <h4>회원가입</h4>
-      <form action="https://jsptogo.herokuapp.com/jspsrc/memb5.jsp" method="post">
+      <form action="https://localhost:8080/memb5.jsp" method="post">
       <ul class="level_1">
         <li><span>아이디</span></li>
         <li><input type="text" name="namex"></li>
@@ -35,8 +35,8 @@
         <li><input type="checkbox" name="hobby" value="reading">독서</li>
       </ul>
       <ul class="level_1">
-        <li><button>회원가입</button></li>
-        <li><button>취소</button><li>
+        <li><button type="submit">회원가입</button></li>
+        <li><button type="reset">취소</button><li>
       </ul>
     </section>
   </body>
