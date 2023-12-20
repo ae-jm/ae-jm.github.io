@@ -10,18 +10,18 @@ body {
 }
 
 div.container {
-    height:600px;
+    height:300px;
     margin-top: 200px;
 }
 
 div#left.group {
     float: left;
-    margin-left: 70px;
+    margin-left: 120px;
 }
 
 div#right.group {
     float: right;
-    margin-right: 70px;
+    margin-right: 120px;
 }
 
 /* section#left {
