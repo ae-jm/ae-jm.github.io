@@ -9,23 +9,27 @@ body {
     -o-background-size: cover;
 }
 
-div#container1 {
-    margin-left: 170px;
+div.container {
+    height:530px;
+    margin: auto;
+}
+
+div.left {
     float: left;
 }
 
-div#container2 {
+div#right {
     float: right;
 }
 
-section#left {
+/* section#left {
     margin-top: 300px;
     margin-bottom: 200px;
 }
 section#right {
     font-family: 'Gowun Dodum', sans-serif;
     margin: 300px;
-}
+} */
 nav.font1 {
     color: white;
     font-family: 'Gowun Dodum', sans-serif;
