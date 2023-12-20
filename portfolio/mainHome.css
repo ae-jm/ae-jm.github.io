@@ -16,10 +16,12 @@ div.container {
 
 div#left.group {
     float: left;
+    margin: auto;
 }
 
 div#right.group {
     float: right;
+    margin: auto;
 }
 
 /* section#left {
