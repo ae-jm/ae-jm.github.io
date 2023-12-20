@@ -11,16 +11,19 @@ body {
 
 div.container {
     height:600px;
+    margin-top: 50px;
     margin: auto;
 }
 
 div#left.group {
     float: left;
+    margin-left: 50px;
     margin: auto;
 }
 
 div#right.group {
     float: right;
+    margin-right: 50px;
     margin: auto;
 }
 
