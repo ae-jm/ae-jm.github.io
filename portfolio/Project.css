@@ -82,7 +82,7 @@ ul.dot2 {
     list-style-type: none;
 }
 
-div footer { 
+footer {
 	display: flex;
 	font-family: 'Gowun Dodum', sans-serif;
     margin: 5px; 
