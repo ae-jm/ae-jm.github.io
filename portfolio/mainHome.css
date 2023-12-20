@@ -14,11 +14,11 @@ div.container {
     margin: auto;
 }
 
-div.left {
+div#left.group {
     float: left;
 }
 
-div#right {
+div#right.group {
     float: right;
 }
 
