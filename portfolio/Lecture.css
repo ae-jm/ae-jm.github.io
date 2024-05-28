@@ -84,6 +84,40 @@ details[open] > summary ~ * { animation:reveal 0.5s;}
     to { opacity:1; transform:translate3d(0, 0, 0); }
 }
 
+/* span 태그 option */
+.tooltip {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    z-index: 1;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    border: 1px solid black;
+    box-sizing: border-box;
+    border-radius: 50%;
+}
+
+/* 툴팁 option */
+.tooltip i {
+    position: absolute;
+    display: none;
+    height: 4em;
+    width: 8em;
+    bottom: -6em;
+    left: calc(-50% + 1.25em);
+    padding: 0.5em 0.5em;
+    text-align: center;
+    color: #black;
+    background-color: #white;
+    box-sizing: border-box;
+    -webkit-transform: translateX(calc(-50%));
+    -webkit-border-radius: 0.4em;
+}
+
+.tooltip:hover i,
+.tooltip:focus i{display: block;}
+
 footer { 
 	display: flex;
 	font-family: 'Gowun Dodum', sans-serif;
@@ -96,4 +130,4 @@ footer {
 
 a:link { color:black; background-color:transparent; text-decoration:none; }
 a:visited { color:black; background-color:transparent; text-decoration:none; }
-a:hover { color:black; background-color:transparent; text-decoration:underline; }
+/* a:hover { color:black; background-color:transparent; text-decoration:underline; } */
