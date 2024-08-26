@@ -81,6 +81,9 @@ img {
 	width: 440px;
 	height: 230px;
 }
+a.my-role {
+	font-weight: bold;
+}
 
 ul.dot2 {
     color: black;
