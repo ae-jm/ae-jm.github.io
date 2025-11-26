@@ -43,11 +43,6 @@ section {
     letter-spacing: 2px;
 }
 
-/* aside.font2 {
-    text-align: justify;
-    letter-spacing: -1px;
-    font-size: 38px;
-} */
 ul {
     display: flex;
     flex-wrap: wrap;
