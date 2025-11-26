@@ -24,21 +24,22 @@ div#top.group {
 }
 li.font2 {
     font-size: 38px;
-    font-weight: 100;
+    font-weight: 300;
     list-style-type: none;
+    font-family: "Noto Sans KR", sans-serif;
 }
 li.font1 {
     font-size: 20px;
+    font-family: "Gowun Batang", serif;
     list-style-type: none;
 }
 nav {
-    font-family: 'Gowun Dodum', sans-serif;
     letter-spacing: 2px;
 }
 section {
     margin-top: 80px;
     font-family: "Noto Serif KR", serif;
-    font-size: 27px;
+    font-size: 23px;
     letter-spacing: 2px;
     color: dimgrey;
 }
