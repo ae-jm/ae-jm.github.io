@@ -56,6 +56,10 @@ ul {
     color: black;
     font-size: 25px;
 }
+ul>li {
+    padding: 10;
+}
+
 li.item1 {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
