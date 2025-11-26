@@ -13,6 +13,7 @@ div.container {
     color: black;
     /* height:500px; */
     margin-top: 500px;
+    text-align: center;
 }
 
 div#top.group {
@@ -34,7 +35,6 @@ div#bottom.group {
 
 nav {
     font-family: 'Gowun Dodum', sans-serif;
-    text-align: center;
     letter-spacing: 2px;
 }
 section {
