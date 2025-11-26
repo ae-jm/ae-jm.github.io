@@ -60,7 +60,8 @@ ul {
 }
 ul li {
     padding: 10;
-    text-align: center;
+    /* text-align: center; */
+    display: inline-block;
 }
 
 li.item1 {
