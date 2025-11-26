@@ -51,15 +51,15 @@ section {
 ul {
     display: flex;
     flex-wrap: wrap;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
     list-style-type: none;
     text-align: center;
     color: black;
     font-size: 23px;
 }
 ul li {
-    padding: 10;
+    margin-left: 10px;
     display: inline-block;
 }
 
