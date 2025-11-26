@@ -39,7 +39,7 @@ nav {
 section {
     margin-top: 80px;
     font-family: "Noto Serif KR", serif;
-    font-size: 30px;
+    font-size: 27px;
     letter-spacing: 2px;
 }
 
@@ -56,9 +56,9 @@ ul {
     list-style-type: none;
     text-align: justify;
     color: black;
-    font-size: 25px;
+    font-size: 23px;
 }
-ul>li {
+ul li {
     padding: 10;
     text-align: center;
 }
