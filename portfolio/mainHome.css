@@ -12,7 +12,7 @@ body {
 div.container {
     color: black;
     /* height:500px; */
-    margin-top: 500px;
+    margin-top: 300px;
     text-align: center;
 }
 
@@ -46,12 +46,14 @@ section {
     font-size: 38px;
 } */
 ul {
-    color: black;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
+    text-align: justify;
+    color: black;
+    font-size: 25px;
 }
 li.item1 {
     font-family: 'IBM Plex Sans KR', sans-serif;
