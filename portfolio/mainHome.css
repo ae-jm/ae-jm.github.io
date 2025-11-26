@@ -12,12 +12,19 @@ body {
 div.container {
     color: black;
     /* height:500px; */
-    margin-top: 200px;
+    margin-top: 500px;
 }
 
 div#top.group {
     float: top;
     margin-bottom: 120px;
+}
+li.font2 {
+    font-size: 30px;
+    font-weight: 100;
+}
+li.font1 {
+    font-size: 10px;
 }
 
 div#bottom.group {
@@ -31,7 +38,6 @@ nav {
     letter-spacing: 2px;
 }
 section {
-    font-weight: 100;
     font-size: 10px;
     letter-spacing: 2px;
 }
@@ -45,16 +51,16 @@ ul.dot1 {
     color: black;
     list-style-type: none;
 }
-a.item1 {
+li.item1 {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
-a.item2 {
+li.item2 {
     font-family: 'Playfair Display', serif;
 }
-a.item3 {
+li.item3 {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
-a.item4 {
+li.item4 {
     font-family: 'DM Serif Display', serif;
 }
 
