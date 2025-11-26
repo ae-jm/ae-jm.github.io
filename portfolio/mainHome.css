@@ -69,6 +69,6 @@ li.item4 {
     font-family: 'DM Serif Display', serif;
 }
 
-a:link { color:white; background-color:transparent; text-decoration:none; }
-a:visited { color:white; background-color:transparent; text-decoration:none; }
-a:hover { color:white; background-color:transparent; text-decoration:underline; }
+a:link { color:green; background-color:transparent; text-decoration:none; }
+a:visited { color:green; background-color:transparent; text-decoration:none; }
+a:hover { color:green; background-color:transparent; text-decoration:underline; }
