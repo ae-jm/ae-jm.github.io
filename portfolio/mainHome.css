@@ -11,9 +11,10 @@ body {
 
 div.container {
     color: black;
-    /* height:500px; */
-    margin-top: 200px;
-    margin-bottom: 200px;
+    width: 1200px; 
+    margin:0 auto;
+    /* margin-top: 200px;
+    margin-bottom: 200px; */
     text-align: center;
 }
 
@@ -27,11 +28,6 @@ li.font2 {
 li.font1 {
     font-size: 20px;
 }
-
-div#bottom.group {
-    margin-top: 100px;
-}
-
 nav {
     font-family: 'Gowun Dodum', sans-serif;
     letter-spacing: 2px;
@@ -43,21 +39,24 @@ section {
     letter-spacing: 2px;
 }
 
+
+div#bottom.group {
+    margin-top: 100px;
+}
 ul {
     display: flex;
     flex-wrap: wrap;
-    /* margin: 0;
-    padding: 0; */
     list-style-type: none;
+    float:left;
     text-align: center;
     color: black;
     font-size: 23px;
 }
 ul li {
-    margin-left: 30px;
+    margin-left: 50px;
     display: inline-block;
+    text-align:center;
 }
-
 li.item1 {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
