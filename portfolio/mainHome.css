@@ -42,19 +42,19 @@ section {
     font-size: 38px;
 } */
 ul.dot1 {
-    /* color: white; */
+    color: black;
     list-style-type: none;
 }
-li.item1 {
+a.item1 {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
-li.item2 {
+a.item2 {
     font-family: 'Playfair Display', serif;
 }
-li.item3 {
+a.item3 {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
-li.item4 {
+a.item4 {
     font-family: 'DM Serif Display', serif;
 }
 
