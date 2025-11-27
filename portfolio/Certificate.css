@@ -16,7 +16,6 @@ div.container {
 
 div.menubar {
 	/* width: 1440px; */
-	text-align: right;
 	margin: 0 auto;
 	margin-bottom: 70px;
 }
@@ -30,11 +29,13 @@ header {
 }
 header > h2 {
 	margin-left: 10px;
+	text-align: left;
 }
 header > nav {
 	width: 500px;
 	height: 100%;
 	margin-right: 10px;
+	text-align: right;
 }
 header ul {
 	width: 100%;
