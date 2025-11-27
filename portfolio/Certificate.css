@@ -77,7 +77,7 @@ section p {
 footer { 
 	display: flex;
 	font-family: "Gowun Batang", serif;
-	font-size: 10px;
+	font-size: 20px;
     margin: 5px; 
     padding: 8px; 
     /* width: 1000px;  */
@@ -86,6 +86,6 @@ footer {
 }
 
 a:link { color:black; background-color:transparent; text-decoration:none; }
-a:visited::after { color:black; background-color:transparent; text-decoration: none; }
+a:visited { color:black; background-color:transparent; text-decoration: none; }
 section a { title: }
 a.menu:hover { color:green; background-color:transparent; text-decoration:underline; }
