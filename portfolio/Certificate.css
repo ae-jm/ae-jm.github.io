@@ -15,7 +15,8 @@ div.container {
 }
 
 div.menubar {
-	width: 1440px;
+	/* width: 1440px; */
+	text-align: right;
 	margin: 0 auto;
 	margin-bottom: 70px;
 }
