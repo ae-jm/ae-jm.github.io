@@ -48,13 +48,13 @@ div#bottom.group {
     margin-top: 150px;
 }
 ul {
-    /* display: flex; */
     flex-wrap: wrap;
     list-style-type: none;
-    /* float:left; */
     text-align: center;
     color: black;
     font-size: 23px;
+    margin: 0;
+    padding: 0;
 }
 ul li {
     margin-right: 50px;
