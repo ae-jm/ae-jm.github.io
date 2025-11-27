@@ -84,6 +84,6 @@ footer {
     clear: both;
 }
 
-/* a:link { color:green; background-color:transparent; } */
-a:visited { color:green; background-color:transparent; }
-a:hover { color:green; background-color:transparent; }
+a:link { color:black; background-color:transparent; text-decoration:none; }
+a:visited { color:green; background-color:transparent; text-decoration: none; }
+a.menu:hover { color:green; background-color:transparent; text-decoration:underline; }
