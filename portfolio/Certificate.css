@@ -11,7 +11,7 @@ body {
 div.container {
     color: black;
     width: 1200px; 
-    text-align: left;
+    /* text-align: left; */
 }
 
 div.menubar {
