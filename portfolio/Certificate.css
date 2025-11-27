@@ -48,6 +48,9 @@ header ul > li {
 	display: flex;
 	align-items: center;
 }
+ul.dot2 {
+    list-style-type: none;
+}
 
 div.content {
 	height: 700px;
@@ -67,9 +70,8 @@ section#area3 {
 	padding: 50px;
 	font-family: 'Gowun Dodum', sans-serif;
 }
-ul.dot2 {
-    color: black;
-    list-style-type: none;
+section p {
+	color: #9BAB96;
 }
 
 footer { 
