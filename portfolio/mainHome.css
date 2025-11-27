@@ -22,14 +22,14 @@ div#top.group {
     float: top;
 }
 li.font2 {
+    /* font-family: "Noto Sans KR", sans-serif; */
     font-size: 38px;
     font-weight: 300;
     list-style-type: none;
-    font-family: "Noto Sans KR", sans-serif;
 }
 li.font1 {
-    font-size: 20px;
     font-family: "Gowun Batang", serif;
+    font-size: 20px;
     list-style-type: none;
 }
 nav {
@@ -53,7 +53,6 @@ ul {
     text-align: center;
     color: black;
     font-size: 23px;
-    margin: 0;
     padding: 0;
 }
 ul li {
