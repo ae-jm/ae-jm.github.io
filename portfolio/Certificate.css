@@ -8,6 +8,14 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
 }
+div.container {
+    color: black;
+    width: 1200px; 
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+    text-align: center;
+}
 
 div.menubar {
 	width: 1440px;
