@@ -49,23 +49,9 @@ header ul > li {
 	align-items: center;
 }
 
-/* div.content {
-	float: center;
-	width: 800px;
-	margin: 50px;
-	margin-bottom: 100px;
+div.content {
+	height: 700px;
 }
-section#box {
-	display: flex;
-	justify-content: center;
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	border: solid 1px gray;
-	text-align: center;
-	margin-bottom: 100px;
-} */
 section#area1 {
 	width: 800px;
 	padding: 50px;
@@ -81,7 +67,6 @@ section#area3 {
 	padding: 50px;
 	font-family: 'Gowun Dodum', sans-serif;
 }
-
 ul.dot2 {
     color: black;
     list-style-type: none;
@@ -92,7 +77,7 @@ footer {
 	font-family: 'Gowun Dodum', sans-serif;
     margin: 5px; 
     padding: 8px; 
-    width: 1000px; 
+    /* width: 1000px;  */
     height: 50px; 
     clear: both;
 }
