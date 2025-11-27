@@ -23,8 +23,8 @@ div#top.group {
 }
 li.font2 {
     /* font-family: "Noto Sans KR", sans-serif; */
-    font-size: 38px;
-    font-weight: 300;
+    font-size: 40px;
+    font-weight: 500;
     list-style-type: none;
 }
 li.font1 {
@@ -37,7 +37,7 @@ nav {
 }
 section {
     margin-top: 80px;
-    font-family: "Noto Serif KR", serif;
+    font-family: "Gowun Batang", serif;
     font-size: 23px;
     letter-spacing: 2px;
     color: dimgrey;
