@@ -21,10 +21,24 @@ div.container {
 div#top.group {
     float: top;
 }
+details {
+    max-height: 2em;
+    overflow: hidden;
+    transition: max-height 400ms ease-out;
+}
 summary {
     font-size: 40px;
     font-weight: 500;
 }
+/* Safari와 Chrome에서 기본 제공되는 화살표 제거 */
+details summary::-webkit-details-marker {
+  display: none;
+} 
+/* Firefox에서 기본 제공되는 화살표 제거 */
+details[open] summary::marker {
+  display: none;
+}
+
 p.font1 {
     font-family: "Gowun Batang", serif;
     font-size: 20px;
@@ -71,6 +85,8 @@ li.item3 {
 li.item4 {
     font-family: 'DM Serif Display', serif;
 }
+
+summary:hover { color:green; background-color:transparent; text-decoration:underline; }
 
 a:link { color:green; background-color:transparent; text-decoration:none; }
 a:visited { color:green; background-color:transparent; text-decoration:none; }
