@@ -22,13 +22,14 @@ div#top.group {
     float: top;
 }
 details {
-    max-height: 2em;
+    max-height: 480px;
     overflow: hidden;
     transition: max-height 400ms ease-out;
 }
 summary {
     font-size: 40px;
     font-weight: 500;
+    list-style-type: none;
 }
 /* Safari와 Chrome에서 기본 제공되는 화살표 제거 */
 details summary::-webkit-details-marker {
