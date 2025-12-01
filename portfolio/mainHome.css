@@ -22,6 +22,7 @@ div#top.group {
     float: top;
 }
 details {
+    height: auto;
     max-height: 480px;
     overflow: hidden;
     transition: max-height 400ms ease-out;
