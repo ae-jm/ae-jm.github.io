@@ -20,6 +20,8 @@ div.container {
 
 div#top.group {
     float: top;
+    position: relative;
+    display: inline-block;
 }
 .dropdown {
     background-color: #3498DB;
@@ -31,13 +33,31 @@ div#top.group {
     font-size: 40px;
     font-weight: 500;
 }
+.dropdown:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
 p.font1 {
     font-family: "Gowun Batang", serif;
     font-size: 20px;
+    text-decoration: none;
+    display: block;
 }
 div#myDropdown {
     letter-spacing: 2px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.show {
+    display:block;
+}
+
 section {
     margin-top: 80px;
     font-family: "Gowun Batang", serif;
