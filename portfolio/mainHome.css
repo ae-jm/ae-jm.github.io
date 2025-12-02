@@ -54,6 +54,23 @@ nav {
     letter-spacing: 2px;
 }
 
+div#bottom{
+  position : relative;
+  display : inline-block;
+}
+ul.bar{
+  display : none;
+  position : absolute;
+  z-index : 1; /*다른 요소들보다 앞에 배치*/
+}
+
+ul.bar a{
+  display : block;
+}
+
+div#bottom:hover .bar {
+  display: block;
+}
 p.menu {
     margin-top: 80px;
     font-family: "Gowun Batang", serif;
@@ -76,7 +93,7 @@ ul li {
     display: inline-block;
     text-align:center;
 }
-.menu .bar { 
+/* .menu .bar { 
     display:none; 
     position:absolute; 
     left:0; 
@@ -99,7 +116,7 @@ ul li {
 }
 ul > li { 
     position:relative; 
-}
+} */
 li.item1 {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
