@@ -21,13 +21,13 @@ div.container {
 div#top.group {
     float: top;
 }
-details {
+div#top details {
     height: auto;
     max-height: 480px;
     overflow: hidden;
     transition: max-height 400ms ease-out;
 }
-summary {
+div#top summary {
     font-size: 40px;
     font-weight: 500;
     list-style-type: none;
@@ -40,7 +40,6 @@ details summary::-webkit-details-marker {
 details[open] summary::marker {
   display: none;
 }
-
 p.font1 {
     font-family: "Gowun Batang", serif;
     font-size: 20px;
@@ -49,17 +48,15 @@ nav {
     letter-spacing: 2px;
 }
 
-section {
+div#bottom.group {
+    margin-top: 150px;
+}
+p.menu {
     margin-top: 80px;
     font-family: "Gowun Batang", serif;
     font-size: 23px;
     letter-spacing: 2px;
     color: dimgrey;
-}
-
-
-div#bottom.group {
-    margin-top: 150px;
 }
 ul {
     flex-wrap: wrap;
@@ -88,7 +85,10 @@ li.item4 {
     font-family: 'DM Serif Display', serif;
 }
 
-summary:hover { color:green; background-color:transparent; text-decoration:underline; }
+div#top summary:hover { color:green; background-color:transparent; text-decoration:underline; }
+p.menu:.menu:after { display:block; content:''; clear:both; }
+ul > li { position:relative; float:left; margin-right:5px; }
+ul > li:hover { display:block; }
 
 a:link { color:green; background-color:transparent; text-decoration:none; }
 a:visited { color:green; background-color:transparent; text-decoration:none; }
