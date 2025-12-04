@@ -27,8 +27,10 @@ div#open details > summary {
 }
 div#open details > .content {
   max-height: 0;
+  opacity: 0;
   overflow: hidden;
-  transition: max-height 0.6s ease;
+  transform: translateY(-10px);
+  transition: max-height 0.7s ease, opacity 0.7s ease, transform 0.55s ease;
 }
 div#open summary {
     font-size: 40px;
@@ -41,6 +43,8 @@ details summary::-webkit-details-marker { display: none; }
 details[open] summary::marker { display: none; }
 details[open] > .content { 
     max-height: 650px;
+    opacity: 1;
+    transform: translateY(0);
 }
 
 p.font1 {
@@ -67,6 +71,9 @@ p.menu {
     font-size: 23px;
     letter-spacing: 2px;
     color: dimgrey;
+    padding: 6px 10px;
+    border-radius: 6px;
+    transition: color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 ul.bar{
   display : none;
@@ -98,36 +105,6 @@ ul.bar li {
     font-size: 23px;
     text-align: center;
 }
-/* ul li {
-    margin-right: 50px;
-    margin-left: 50px;
-    display: inline-block;
-    text-align:center;
-} */
-/* .menu .bar { 
-    display:none; 
-    position:absolute; 
-    left:0; 
-    right:0; 
-    text-align:center; 
-}
-.menu .bar a { 
-    display:block; 
-    padding:5px; 
-    background:#666; 
-    color:#fff; 
-}
-.menu > li > a {
-    display:block; 
-    padding:0 15px; 
-    background:#333; 
-    height:40px; 
-    line-height:40px; 
-    color:#fff;
-}
-ul > li { 
-    position:relative; 
-} */
 li.item1 {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
@@ -142,8 +119,7 @@ li.item4 {
 }
 
 div#open summary:hover { color:green; background-color:transparent; text-decoration:underline; }
-/* p.menu:.menu:after { display:block; content:''; clear:both; }
-ul > li:hover { display:block; } */
+p.menu:hover { color: black; border: 2px solid black; box-shadow: 0 0 8px rgba(0,0,0,0.15) };
 
 a:link { color:green; background-color:transparent; text-decoration:none; }
 a:visited { color:green; background-color:transparent; text-decoration:none; }
