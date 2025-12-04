@@ -1,7 +1,13 @@
 /* cdn import */
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap&family=DM+Serif+Display:ital@1&family=IBM+Plex+Sans+KR:wght@200&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital@1&display=swap');
 
+* {
+    box-sizing: border-box;
+}
+
 body {
+    margin: 0;
+    padding: 0;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -15,9 +21,9 @@ div.container {
     text-align: center;
 }
 
-div#open.group {
+/* div#open.group {
     float: top;
-}
+} */
 div#open details {
     display: block;
 }
@@ -36,6 +42,17 @@ div#open summary {
     font-size: 40px;
     font-weight: 500;
     list-style-type: none;
+    margin: 0;
+    padding: 0.2em 0;
+}
+div#open details > .content {
+  max-height: 0;           /* **중요**: 초기 숨김 높이 */
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-10px);
+  transition: max-height 0.7s ease, opacity 0.6s ease, transform 0.55s ease;
+  will-change: max-height, opacity, transform;
+  padding-top: 0; /* summary 아래 공간 제어는 필요시 조정 */
 }
 /* Safari와 Chrome에서 기본 제공되는 화살표 제거 */
 details summary::-webkit-details-marker { display: none; } 
@@ -50,12 +67,14 @@ details[open] > .content {
 p.font1 {
     font-family: "Gowun Batang", serif;
     font-size: 20px;
+    margin: 8px 0;
 }
 p.font2 {
     font-family: "Gowun Batang", serif;
     font-style: italic;
     font-size: 35px;
     font-weight: 300;
+    margin: 12px 0;
 }
 nav {
     letter-spacing: 2px;
@@ -64,6 +83,7 @@ nav {
 div.menu-wrap{
     position : relative;
     display : inline-block;
+    z-index: 20;
 }
 p.menu {
     margin-top: 80px;
@@ -73,31 +93,33 @@ p.menu {
     color: dimgrey;
     padding: 6px 10px;
     border-radius: 6px;
-    transition: color 0.25s ease, border-color 0.25s ease;
+    transition: color 0.25s ease, font-weight 0.25s ease;
 }
 ul.bar{
     /* display : none; */
     opacity: 0;
     visibility: hidden;
     position : absolute;
-    z-index : 10; /*다른 요소들보다 앞에 배치*/
+    z-index : 30; /*다른 요소들보다 앞에 배치*/
     list-style-type: none;
-    padding: 0;
-    margin: 0;
+    padding: 8px 12px;
+    margin: 8px 0 0 0;
     width: max-content;
     left: 50%;
     transform: translateX(-50%) translateY(10px);
-    transition: opacity 0.35s ease, transform 0.35s ease;
+    transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s;
+    pointer-events: none; /* 숨김일 때 클릭 방지 */
 }
 div.menu-wrap:hover .bar {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
 }
 ul {
     margin-top: 50px;
     margin-bottom: 100px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     list-style-type: none;
     text-align: center;
     color: black;
@@ -106,7 +128,7 @@ ul {
 }
 ul.bar li {
     display: inline-block;
-    margin: 0 25px;
+    margin: 0 18px;
     font-size: 23px;
     text-align: center;
 }
@@ -124,8 +146,13 @@ li.item4 {
 }
 
 div#open summary:hover { color:green; background-color:transparent; text-decoration:underline; }
-p.menu:hover { color: black; border: 2px solid black; box-shadow: 0 0 8px rgba(0,0,0,0.15); }
+p.menu:hover { color: black; font-weight: 500; }
 
 a:link { color:green; background-color:transparent; text-decoration:none; }
 a:visited { color:green; background-color:transparent; text-decoration:none; }
 a:hover { color:green; background-color:transparent; text-decoration:underline; }
+
+@media (max-width: 1220px) {
+  div.container { width: 90%; }
+  p.menu { margin-top: 40px; }
+}
