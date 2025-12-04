@@ -27,7 +27,7 @@ div#open details > summary {
 }
 div#open details > .content {
     /* max-height: 0; */
-    opacity: 0;
+    /* opacity: 0; */
     overflow: hidden;
     transform: translateY(-10px);
     transition: max-height 0.7s ease, opacity 0.7s ease, transform 0.55s ease;
@@ -73,7 +73,7 @@ p.menu {
     color: dimgrey;
     padding: 6px 10px;
     border-radius: 6px;
-    transition: color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    transition: color 0.25s ease, border-color 0.25s ease;
 }
 ul.bar{
     /* display : none; */
