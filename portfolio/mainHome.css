@@ -45,7 +45,7 @@ div#open summary {
 details summary::-webkit-details-marker { display: none; } 
 /* Firefox에서 기본 제공되는 화살표 제거 */
 details[open] summary::marker { display: none; }
-details[open] { 
+details[open] > .content { 
     max-height: 650px;
 }
 
