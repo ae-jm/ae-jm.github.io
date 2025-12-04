@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap&family=DM+Serif+Display:ital@1&family=IBM+Plex+Sans+KR:wght@200&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital@1&display=swap');
 
 body {
-    /* background-image: linear-gradient(90deg, black 50%, lightgray 50%); */
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -12,34 +11,29 @@ body {
 div.container {
     color: black;
     width: 1200px; 
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 200px;
+    margin: 200px auto 0 auto;
     text-align: center;
 }
 
-div#top.group {
+div#open.group {
     float: top;
 }
-div#top details {
+div#open details {
     height: auto;
     max-height: 480px;
     overflow: hidden;
     transition: max-height 400ms ease-out;
 }
-div#top summary {
+div#open summary {
     font-size: 40px;
     font-weight: 500;
     list-style-type: none;
 }
 /* Safari와 Chrome에서 기본 제공되는 화살표 제거 */
-details summary::-webkit-details-marker {
-  display: none;
-} 
+details summary::-webkit-details-marker { display: none; } 
 /* Firefox에서 기본 제공되는 화살표 제거 */
-details[open] summary::marker {
-  display: none;
-}
+details[open] summary::marker { display: none; }
+
 p.font1 {
     font-family: "Gowun Batang", serif;
     font-size: 20px;
@@ -54,22 +48,9 @@ nav {
     letter-spacing: 2px;
 }
 
-div#bottom{
+div.menu-wrap{
   position : relative;
   display : inline-block;
-}
-ul.bar{
-  display : none;
-  position : absolute;
-  z-index : 1; /*다른 요소들보다 앞에 배치*/
-}
-
-ul.bar a{
-  display : block;
-}
-
-div#bottom:hover .bar {
-  display: block;
 }
 p.menu {
     margin-top: 80px;
@@ -77,6 +58,20 @@ p.menu {
     font-size: 23px;
     letter-spacing: 2px;
     color: dimgrey;
+}
+ul.bar{
+  display : none;
+  position : absolute;
+  z-index : 10; /*다른 요소들보다 앞에 배치*/
+  list-style-type: none;
+  padding: 0;
+  margin: 30px 0 0 0;
+  width: max-content;
+  left: 50%;
+  transform: translateX(-50%);
+}
+div.menu-wrap:hover .bar {
+  display: block;
 }
 ul {
     margin-top: 50px;
@@ -88,12 +83,18 @@ ul {
     font-size: 23px;
     padding: 0;
 }
-ul li {
+ul.bar li {
+    display: inline-block;
+    margin: 0 25px;
+    font-size: 23px;
+    text-align: center;
+}
+/* ul li {
     margin-right: 50px;
     margin-left: 50px;
     display: inline-block;
     text-align:center;
-}
+} */
 /* .menu .bar { 
     display:none; 
     position:absolute; 
@@ -131,9 +132,9 @@ li.item4 {
     font-family: 'DM Serif Display', serif;
 }
 
-div#top summary:hover { color:green; background-color:transparent; text-decoration:underline; }
-p.menu:.menu:after { display:block; content:''; clear:both; }
-ul > li:hover { display:block; }
+div#open summary:hover { color:green; background-color:transparent; text-decoration:underline; }
+/* p.menu:.menu:after { display:block; content:''; clear:both; }
+ul > li:hover { display:block; } */
 
 a:link { color:green; background-color:transparent; text-decoration:none; }
 a:visited { color:green; background-color:transparent; text-decoration:none; }
