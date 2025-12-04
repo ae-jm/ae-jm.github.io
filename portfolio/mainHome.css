@@ -19,18 +19,18 @@ div#open.group {
     float: top;
 }
 div#open details {
-  display: block;
+    display: block;
 }
 div#open details > summary {
-  cursor: pointer;
-  display: block;
+    cursor: pointer;
+    display: block;
 }
 div#open details > .content {
-  /* max-height: 0; */
-  opacity: 0;
-  overflow: hidden;
-  transform: translateY(-10px);
-  transition: max-height 0.7s ease, opacity 0.7s ease, transform 0.55s ease;
+    /* max-height: 0; */
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-10px);
+    transition: max-height 0.7s ease, opacity 0.7s ease, transform 0.55s ease;
 }
 div#open summary {
     font-size: 40px;
@@ -62,8 +62,8 @@ nav {
 }
 
 div.menu-wrap{
-  position : relative;
-  display : inline-block;
+    position : relative;
+    display : inline-block;
 }
 p.menu {
     margin-top: 80px;
@@ -76,18 +76,23 @@ p.menu {
     transition: color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
 }
 ul.bar{
-  display : none;
-  position : absolute;
-  z-index : 10; /*다른 요소들보다 앞에 배치*/
-  list-style-type: none;
-  padding: 0;
-  margin: 0 0 0 0;
-  width: max-content;
-  left: 50%;
-  transform: translateX(-50%);
+    /* display : none; */
+    opacity: 0;
+    visibility: hidden;
+    position : absolute;
+    z-index : 10; /*다른 요소들보다 앞에 배치*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    transition: opacity 0.35s ease, transform 0.35s ease;
 }
 div.menu-wrap:hover .bar {
-  display: block;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-50%) translateY(0);
 }
 ul {
     margin-top: 50px;
@@ -119,7 +124,7 @@ li.item4 {
 }
 
 div#open summary:hover { color:green; background-color:transparent; text-decoration:underline; }
-p.menu:hover { color: black; border: 2px solid black; box-shadow: 0 0 8px rgba(0,0,0,0.15) };
+p.menu:hover { color: black; border: 2px solid black; box-shadow: 0 0 8px rgba(0,0,0,0.15); }
 
 a:link { color:green; background-color:transparent; text-decoration:none; }
 a:visited { color:green; background-color:transparent; text-decoration:none; }
