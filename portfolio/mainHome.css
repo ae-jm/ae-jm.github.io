@@ -32,20 +32,6 @@ div#open details > summary {
     display: block;
 }
 div#open details > .content {
-    /* max-height: 0; */
-    /* opacity: 0; */
-    overflow: hidden;
-    transform: translateY(-10px);
-    transition: max-height 0.7s ease, opacity 0.7s ease, transform 0.55s ease;
-}
-div#open summary {
-    font-size: 40px;
-    font-weight: 500;
-    list-style-type: none;
-    margin: 0;
-    padding: 0.2em 0;
-}
-div#open details > .content {
   max-height: 0;           /* **중요**: 초기 숨김 높이 */
   opacity: 0;
   overflow: hidden;
@@ -54,6 +40,14 @@ div#open details > .content {
   will-change: max-height, opacity, transform;
   padding-top: 0; /* summary 아래 공간 제어는 필요시 조정 */
 }
+div#open summary {
+    font-size: 40px;
+    font-weight: 500;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.2em 0;
+}
+
 /* Safari와 Chrome에서 기본 제공되는 화살표 제거 */
 details summary::-webkit-details-marker { display: none; } 
 /* Firefox에서 기본 제공되는 화살표 제거 */
