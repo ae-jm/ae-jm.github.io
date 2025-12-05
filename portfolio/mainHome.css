@@ -1,9 +1,4 @@
-/* 
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap&family=DM+Serif+Display:ital@1&family=IBM+Plex+Sans+KR:wght@200&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital@1&display=swap');
-
-* {
-    box-sizing: border-box;
-}
 
 body {
     margin: 0;
@@ -13,16 +8,27 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
 }
-
 div.container {
     color: black;
-    width: 1200px; 
+    width: auto; 
     margin: 200px auto 0 auto;
     text-align: center;
 }
 
 div#open.group {
     float: top;
+}
+
+div#open summary {
+    font-size: 40px;
+    font-weight: 500;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.2em 0;
+}
+details summary::-webkit-details-marker,
+details[open] summary::marker {
+    display: none;
 }
 div#open details {
     display: block;
@@ -40,17 +46,7 @@ div#open details > .content {
   will-change: max-height, opacity, transform;
   padding-top: 0; 
 }
-div#open summary {
-    font-size: 40px;
-    font-weight: 500;
-    list-style-type: none;
-    margin: 0;
-    padding: 0.2em 0;
-}
-
-details summary::-webkit-details-marker { display: none; } 
-details[open] summary::marker { display: none; }
-details[open] > .content { 
+details[open] .content {
     max-height: 650px;
     opacity: 1;
     transform: translateY(0);
@@ -59,14 +55,12 @@ details[open] > .content {
 p.font1 {
     font-family: "Gowun Batang", serif;
     font-size: 20px;
-    margin: 8px 0;
 }
 p.font2 {
     font-family: "Gowun Batang", serif;
     font-style: italic;
     font-size: 35px;
     font-weight: 300;
-    margin: 12px 0;
 }
 nav {
     letter-spacing: 2px;
@@ -83,11 +77,12 @@ p.menu {
     font-size: 23px;
     letter-spacing: 2px;
     color: dimgrey;
+    cursor: pointer;
     padding: 6px 10px;
-    border-radius: 6px;
     transition: color 0.25s ease, font-weight 0.25s ease;
 }
-ul.bar{
+
+/* ul.bar{
     display : none;
     opacity: 0;
     visibility: hidden;
@@ -101,6 +96,14 @@ ul.bar{
     transform: translateX(-50%) translateY(10px);
     transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s;
     pointer-events: none; 
+} */
+ul.bar {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin-top: 12px;
+    gap: 24px;
+    justify-content: center;
 }
 div.menu-wrap:hover .bar {
     opacity: 1;
@@ -139,6 +142,7 @@ li.item4 {
 
 div#open summary:hover { color:green; background-color:transparent; text-decoration:underline; }
 p.menu:hover { color: black; font-weight: 500; }
+p.menu:hover + ul.bar { display: flex; }
 
 a:link { color:green; background-color:transparent; text-decoration:none; }
 a:visited { color:green; background-color:transparent; text-decoration:none; }
@@ -147,83 +151,4 @@ a:hover { color:green; background-color:transparent; text-decoration:underline; 
 @media (max-width: 1220px) {
   div.container { width: 90%; }
   p.menu { margin-top: 40px; }
-} */
-
-/* google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap&family=DM+Serif+Display:ital@1&family=IBM+Plex+Sans+KR:wght@200&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital@1&display=swap');
-
-body {
-    font-family: "Gowun Batang", serif;
-    text-align: center;
 }
-
-/* summary 애니메이션 */
-details .content {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transform: translateY(-5px);
-    transition: max-height 0.65s ease, opacity 0.65s ease, transform 0.55s ease;
-}
-details[open] .content {
-    max-height: 650px;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-summary {
-    cursor: pointer;
-    font-size: 40px;
-    font-weight: 500;
-}
-details summary::-webkit-details-marker,
-details[open] summary::marker {
-    display: none;
-}
-
-/* 텍스트 스타일 */
-p.font1 {
-    font-size: 20px;
-}
-p.font2 {
-    font-size: 35px;
-    font-style: italic;
-    font-weight: 300;
-}
-
-/* contact 메뉴 */
-p.menu {
-    margin-top: 60px;
-    font-size: 23px;
-    cursor: pointer;
-    padding: 6px 10px;
-    border: 1px solid transparent;
-    transition: all 0.25s ease;
-}
-p.menu:hover {
-    font-weight: 800;
-    border-color: black;
-}
-
-/* dropdown hover */
-ul.bar {
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin-top: 12px;
-    gap: 24px;
-    justify-content: center;
-}
-p.menu:hover + ul.bar {
-    display: flex;
-}
-
-ul.bar li a {
-    text-decoration: none;
-    font-size: 20px;
-}
-ul.bar li a:hover {
-    text-decoration: underline;
-    color: green;
-}
-
