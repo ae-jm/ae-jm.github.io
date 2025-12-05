@@ -82,8 +82,8 @@ nav {
 
 div.menu-wrap{
     position : relative;
-    display : inline-block;
     z-index: 50;
+    display : inline-block;
 }
 p.menu {
     margin-top: 60px;
@@ -210,3 +210,101 @@ a:hover { color:green; background-color:transparent; text-decoration:underline; 
   p.menu { margin-top: 36px; }
   div#open summary { font-size: 32px; }
 }
+
+/* cdn import */ 
+/* @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap&family=DM+Serif+Display:ital@1&family=IBM+Plex+Sans+KR:wght@200&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital@1&display=swap'); 
+
+body { 
+    background-size: cover; 
+    -webkit-background-size: cover; 
+    -moz-background-size: cover; 
+    -o-background-size: cover; 
+} 
+div.container { 
+    color: black; 
+    width: 1200px; 
+    margin-right: auto; 
+    margin-left: auto; 
+    margin-top: 200px; 
+    text-align: center; 
+} 
+div#open.group { 
+    float: top; 
+} 
+div#open details { 
+    height: auto;
+    max-height: 480px;
+    overflow: hidden; 
+    transition: max-height 400ms ease-out; 
+} 
+div#open summary { 
+    font-size: 40px; 
+    font-weight: 500; 
+    list-style-type: none; 
+} 
+details summary::-webkit-details-marker { display: none; }
+details[open] summary::marker { display: none; } 
+p.font1 { 
+    font-family: "Gowun Batang", serif; 
+    font-size: 20px; 
+} 
+p.font2 { 
+    font-family: "Gowun Batang", serif; 
+    font-style: italic; 
+    font-size: 35px; 
+    font-weight: 300; 
+} 
+nav { 
+    letter-spacing: 2px; 
+} 
+div.menu-wrap{ 
+    position : relative; 
+    display : inline-block; 
+} 
+ul.bar{ 
+    display : none; 
+    position : absolute; 
+    z-index : 1; 
+} 
+ul.bar a{ 
+    display : block;
+} 
+div.menu-wrap:hover .bar { display: block; } 
+p.menu { 
+    margin-top: 80px; 
+    font-family: "Gowun Batang", serif; 
+    font-size: 23px; 
+    letter-spacing: 2px; 
+    color: dimgrey; 
+} 
+ul { 
+    margin-top: 50px; 
+    margin-bottom: 100px; 
+    flex-wrap: wrap; 
+    list-style-type: none; 
+    text-align: center; 
+    color: black; 
+    font-size: 23px; 
+    padding: 0; 
+} 
+ul li { 
+    margin-right: 50px; 
+    margin-left: 50px; 
+    display: inline-block; 
+    text-align:center; 
+}  */
+/* 
+.menu .bar { display:none; position:absolute; left:0; right:0; text-align:center; } 
+.menu .bar a { display:block; padding:5px; background:#666; color:#fff; } 
+.menu > li > a { display:block; padding:0 15px; background:#333; height:40px; line-height:40px; color:#fff; } 
+ul > li { position:relative; } 
+*/ 
+/* li.item1 { font-family: 'IBM Plex Sans KR', sans-serif; } 
+li.item2 { font-family: 'Playfair Display', serif; } 
+li.item3 { font-family: 'IBM Plex Sans KR', sans-serif; } 
+li.item4 { font-family: 'DM Serif Display', serif; } 
+div#open summary:hover { color:green; background-color:transparent; text-decoration:underline; } 
+p.menu:.menu:after { display:block; content:''; clear:both; } ul > li:hover { display:block; } 
+a:link { color:green; background-color:transparent; text-decoration:none; } 
+a:visited { color:green; background-color:transparent; text-decoration:none; } 
+a:hover { color:green; background-color:transparent; text-decoration:underline; } */
