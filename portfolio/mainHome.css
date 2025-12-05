@@ -91,6 +91,7 @@ p.menu:hover {
 }
 
 ul.bar { 
+    display: flex;
     position: absolute;
     left: 50%;
     top: calc(100% + 8px);   /* p.menu 바로 아래 */
