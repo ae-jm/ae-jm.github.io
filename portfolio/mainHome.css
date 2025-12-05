@@ -91,7 +91,6 @@ p.menu:hover {
 }
 
 ul.bar { 
-    display: flex;
     position: absolute;
     left: 50%;
     top: calc(100% + 8px);   /* p.menu 바로 아래 */
@@ -150,19 +149,5 @@ a:link { color:green; background-color:transparent; text-decoration:none; }
 a:visited { color:green; background-color:transparent; text-decoration:none; } 
 a:hover { color:green; background-color:transparent; text-decoration:underline; }
 
-p.menu:hover {
-    color: black;
-    font-weight: 700;
-}
-
-p.menu:hover + ul.bar {
-    display: flex !important;
-}
-
-ul.bar {
-    flex-direction: row;
-}
-
-ul.bar:hover {
-    display: flex !important;
-}
+p.menu:hover { color: black; font-weight: 700; }
+.menu-wrap:hover p.menu { color:black; font-weight:700; }
