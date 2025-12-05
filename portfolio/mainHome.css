@@ -26,8 +26,7 @@ div#open summary {
     font-size: 40px;
     font-weight: 500;
     list-style-type: none;
-    margin: 0;
-    padding: 0.2em 0;
+    margin-bottom: 20px;
 }
 details summary::-webkit-details-marker,
 details[open] summary::marker {
@@ -55,6 +54,7 @@ p.font2 {
     font-style: italic;
     font-size: 35px;
     font-weight: 300;
+    margin-top: 20px;
 }
 nav {
     letter-spacing: 2px;
