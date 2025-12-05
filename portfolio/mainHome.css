@@ -1,6 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap&family=DM+Serif+Display:ital@1&family=IBM+Plex+Sans+KR:wght@200&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital@1&display=swap');
 
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 body {
+    height: 100%;
     margin: 0;
     padding: 0;
     background-size: cover;
@@ -8,39 +15,50 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
 }
+
 div.container {
-    color: black;
-    width: auto; 
+    max-width: 1200px;
+    width: 100%;
     margin: 200px auto 0 auto;
+    padding: 0 20px;
+    color: black;
     text-align: center;
 }
 
-div#open {
+/* div#open {
     float: top;
-}
+} */
 div#open details {
     display: list-item;
+    margin: 0;
+    padding: 0;
 }
 div#open summary {
     cursor: pointer;
     font-size: 40px;
     font-weight: 500;
-    list-style-type: none;
-    margin-bottom: 20px;
+    list-style: none;
+    margin: 0 0 12px 0;
+    padding: 6px 0;
+    line-height: 1;
 }
 details summary::-webkit-details-marker,
 details[open] summary::marker {
     display: none;
 }
 div#open details .content {
-  max-height: 0;           
-  opacity: 0;
-  overflow: hidden;
-  transform: translateY(-5px);
-  transition: max-height 0.65s ease, opacity 0.65s ease, transform 0.55s ease;
+    max-height: 0;           
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-6px);
+    transition: max-height 0.60s cubic-bezier(.2,.95,.25,1), 
+                opacity 0.45s ease,
+                transform 0.45s ease;
+    will-change: max-height, opacity, transform;
+    padding-top: 0;
 }
 details[open] .content {
-    max-height: 650px;
+    max-height: 900px;
     opacity: 1;
     transform: translateY(0);
 }
@@ -48,23 +66,25 @@ details[open] .content {
 p.font1 {
     font-family: "Gowun Batang", serif;
     font-size: 20px;
+    margin: 8px 0;
 }
 p.font2 {
     font-family: "Gowun Batang", serif;
     font-style: italic;
     font-size: 35px;
     font-weight: 300;
-    margin-top: 20px;
+    margin: 12px 0;
+    line-height: 1.1;
 }
 nav {
     letter-spacing: 2px;
 }
 
-/* div.menu-wrap{
+div.menu-wrap{
     position : relative;
     display : inline-block;
-    z-index: 20;
-} */
+    z-index: 50;
+}
 p.menu {
     margin-top: 60px;
     font-family: "Gowun Batang", serif;
@@ -92,12 +112,20 @@ p.menu {
     pointer-events: none; 
 } */
 ul.bar {
-    display: none;
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 8px);
+    transform: translateX(-50%) translateY(6px);
+    display: flex;
     list-style: none;
-    padding: 0;
-    margin-top: 12px;
-    gap: 24px;
-    justify-content: center;
+    padding: 10px 14px;
+    margin: 0;
+    gap: 18px;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+    white-space: nowrap;
 }
 /* div.menu-wrap:hover .bar {
     opacity: 1;
@@ -105,7 +133,7 @@ ul.bar {
     transform: translateX(-50%) translateY(0);
     pointer-events: auto;
 } */
-ul {
+/* ul {
     margin-top: 50px;
     margin-bottom: 100px;
     flex-wrap: wrap;
@@ -120,7 +148,23 @@ ul.bar li {
     margin: 0 18px;
     font-size: 23px;
     text-align: center;
+} */
+
+ul.bar li {
+    margin: 0;
+    padding: 0;
+    display: inline-block;
 }
+ul.bar li a {
+    display: inline-block;
+    padding: 6px 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #0a3b2a;            /* 링크 색상 (원하면 green 계열) */
+    font-weight: 600;
+    transition: color 0.15s ease, text-decoration 0.12s ease;
+}
+    
 li.item1 {
     font-family: 'IBM Plex Sans KR', sans-serif;
 }
@@ -136,13 +180,33 @@ li.item4 {
 
 div#open summary:hover { color:green; background-color:transparent; text-decoration:underline; }
 p.menu:hover { color: black; font-weight: 500; }
-p.menu:hover + ul.bar { display: flex; }
+/* p.menu:hover + ul.bar { display: flex; } */
+.menu-wrap:hover > ul.bar,
+.menu-wrap:focus-within > ul.bar,
+ul.bar:hover {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
 
 a:link { color:green; background-color:transparent; text-decoration:none; }
 a:visited { color:green; background-color:transparent; text-decoration:none; }
 a:hover { color:green; background-color:transparent; text-decoration:underline; }
 
+@media (max-width: 520px) {
+  ul.bar {
+    left: 50%;
+    transform: translateX(-50%);
+    top: calc(100% + 6px);
+    padding: 8px;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+}
+
 @media (max-width: 1220px) {
-  div.container { width: 90%; }
-  p.menu { margin-top: 40px; }
+  div.container { width: 90%; margin-top: 120px; }
+  p.menu { margin-top: 36px; }
+  div#open summary { font-size: 32px; }
 }
