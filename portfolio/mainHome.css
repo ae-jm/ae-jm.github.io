@@ -1,218 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap&family=DM+Serif+Display:ital@1&family=IBM+Plex+Sans+KR:wght@200&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital@1&display=swap');
-
-* {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-}
-
-div.container {
-    max-width: 1200px;
-    width: 100%;
-    margin: 200px auto 0 auto;
-    padding: 0 20px;
-    color: black;
-    text-align: center;
-}
-
-/* div#open {
-    float: top;
-} */
-div#open details {
-    display: list-item;
-    margin: 0;
-    padding: 0;
-}
-div#open summary {
-    cursor: pointer;
-    font-size: 40px;
-    font-weight: 500;
-    list-style: none;
-    margin: 0 0 12px 0;
-    padding: 6px 0;
-    line-height: 1;
-}
-details summary::-webkit-details-marker,
-details[open] summary::marker {
-    display: none;
-}
-div#open details .content {
-    max-height: 0;           
-    opacity: 0;
-    overflow: hidden;
-    transform: translateY(-6px);
-    transition: max-height 0.60s cubic-bezier(.2,.95,.25,1), 
-                opacity 0.45s ease,
-                transform 0.45s ease;
-    will-change: max-height, opacity, transform;
-    padding-top: 0;
-}
-details[open] .content {
-    max-height: 900px;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-p.font1 {
-    font-family: "Gowun Batang", serif;
-    font-size: 20px;
-    margin: 8px 0;
-}
-p.font2 {
-    font-family: "Gowun Batang", serif;
-    font-style: italic;
-    font-size: 35px;
-    font-weight: 300;
-    margin: 12px 0;
-    line-height: 1.1;
-}
-nav {
-    letter-spacing: 2px;
-}
-
-div.menu-wrap{
-    position : relative;
-    z-index: 50;
-    display : inline-block;
-}
-p.menu {
-    margin-top: 60px;
-    font-family: "Gowun Batang", serif;
-    font-size: 23px;
-    letter-spacing: 2px;
-    color: dimgrey;
-    cursor: pointer;
-    padding: 6px 10px;
-    transition: color 0.25s ease, font-weight 0.25s ease;
-}
-
-/* ul.bar{
-    display : none;
-    opacity: 0;
-    visibility: hidden;
-    position : absolute;
-    z-index : 30; 
-    list-style-type: none;
-    padding: 8px 12px;
-    margin: 8px 0 0 0;
-    width: max-content;
-    left: 50%;
-    transform: translateX(-50%) translateY(10px);
-    transition: opacity 0.28s ease, transform 0.28s ease, visibility 0.28s;
-    pointer-events: none; 
-} */
-ul.bar {
-    position: absolute;
-    left: 50%;
-    top: calc(100% + 8px);
-    transform: translateX(-50%) translateY(6px);
-    display: flex;
-    list-style: none;
-    padding: 10px 14px;
-    margin: 0;
-    gap: 18px;
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
-    white-space: nowrap;
-}
-/* div.menu-wrap:hover .bar {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(-50%) translateY(0);
-    pointer-events: auto;
-} */
-/* ul {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    flex-wrap: wrap;
-    list-style-type: none;
-    text-align: center;
-    color: black;
-    font-size: 23px;
-    padding: 0;
-}
-ul.bar li {
-    display: inline-block;
-    margin: 0 18px;
-    font-size: 23px;
-    text-align: center;
-} */
-
-ul.bar li {
-    margin: 0;
-    padding: 0;
-    display: inline-block;
-}
-ul.bar li a {
-    display: inline-block;
-    padding: 6px 8px;
-    text-decoration: none;
-    font-size: 18px;
-    color: #0a3b2a;            /* 링크 색상 (원하면 green 계열) */
-    font-weight: 600;
-    transition: color 0.15s ease, text-decoration 0.12s ease;
-}
-    
-li.item1 {
-    font-family: 'IBM Plex Sans KR', sans-serif;
-}
-li.item2 {
-    font-family: 'Playfair Display', serif;
-}
-li.item3 {
-    font-family: 'IBM Plex Sans KR', sans-serif;
-}
-li.item4 {
-    font-family: 'DM Serif Display', serif;
-}
-
-div#open summary:hover { color:green; background-color:transparent; text-decoration:underline; }
-p.menu:hover { color: black; font-weight: 500; }
-/* p.menu:hover + ul.bar { display: flex; } */
-.menu-wrap:hover > ul.bar,
-.menu-wrap:focus-within > ul.bar,
-ul.bar:hover {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    transform: translateX(-50%) translateY(0);
-}
-
-a:link { color:green; background-color:transparent; text-decoration:none; }
-a:visited { color:green; background-color:transparent; text-decoration:none; }
-a:hover { color:green; background-color:transparent; text-decoration:underline; }
-
-@media (max-width: 520px) {
-  ul.bar {
-    left: 50%;
-    transform: translateX(-50%);
-    top: calc(100% + 6px);
-    padding: 8px;
-    gap: 12px;
-    flex-wrap: wrap;
-  }
-}
-
-@media (max-width: 1220px) {
-  div.container { width: 90%; margin-top: 120px; }
-  p.menu { margin-top: 36px; }
-  div#open summary { font-size: 32px; }
-}
-
 /* cdn import */ 
-/* @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap&family=DM+Serif+Display:ital@1&family=IBM+Plex+Sans+KR:wght@200&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital@1&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap&family=DM+Serif+Display:ital@1&family=IBM+Plex+Sans+KR:wght@200&family=Nanum+Myeongjo:wght@700&family=Playfair+Display:ital@1&display=swap'); 
 
 body { 
     background-size: cover; 
@@ -228,55 +15,112 @@ div.container {
     margin-top: 200px; 
     text-align: center; 
 } 
-div#open.group { 
-    float: top; 
-} 
-div#open details { 
+
+div#open details {
     height: auto;
-    max-height: 480px;
-    overflow: hidden; 
-    transition: max-height 400ms ease-out; 
-} 
+    max-height: none;
+    overflow: visible;
+    transition: none;
+}
+
 div#open summary { 
     font-size: 40px; 
     font-weight: 500; 
     list-style-type: none; 
-} 
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
 details summary::-webkit-details-marker { display: none; }
-details[open] summary::marker { display: none; } 
+details summary::marker { display: none; }
+
+div#open details .content {
+  max-height: 0;           /* 초기에는 가시 높이 없음 */
+  opacity: 0;
+  overflow: hidden;
+  transform: translateY(-6px);
+  transition: max-height 0.45s cubic-bezier(.2,.9,.25,1), 
+              opacity 0.35s ease,
+              transform 0.35s ease;
+  will-change: max-height, opacity, transform;
+}
+
+div#open details[open] > .content,
+div#open details[open] .content {
+    max-height: 900px;
+    opacity: 1;
+    transform: translateY(0);
+}
 p.font1 { 
     font-family: "Gowun Batang", serif; 
     font-size: 20px; 
+    margin: 8px 0;
 } 
 p.font2 { 
     font-family: "Gowun Batang", serif; 
     font-style: italic; 
     font-size: 35px; 
     font-weight: 300; 
+    margin-top: 12px;
 } 
 nav { 
     letter-spacing: 2px; 
 } 
-div.menu-wrap{ 
-    position : relative; 
-    display : inline-block; 
-} 
-ul.bar{ 
-    display : none; 
-    position : absolute; 
-    z-index : 1; 
-} 
-ul.bar a{ 
-    display : block;
-} 
-div.menu-wrap:hover .bar { display: block; } 
+
+.menu-wrap {
+    position: relative;       /* 필수: ul.bar가 이 기준으로 떠야 함 */
+    display: inline-block;
+    z-index: 1000;            /* 충분히 높게 설정 */
+}
+
 p.menu { 
     margin-top: 80px; 
     font-family: "Gowun Batang", serif; 
     font-size: 23px; 
     letter-spacing: 2px; 
     color: dimgrey; 
-} 
+    cursor: pointer;
+    padding: 6px 10px;       /* 살짝 패딩을 주어 hover 영역 확보(시각적 변경 최소) */
+    border-radius: 4px;
+    transition: color 0.18s ease, font-weight 0.12s ease;
+}
+
+p.menu:hover { 
+    color: black; 
+    font-weight: 700;
+}
+
+ul.bar { 
+    position: absolute;
+    left: 50%;
+    top: calc(100% + 8px);   /* p.menu 바로 아래 */
+    transform: translateX(-50%) translateY(6px);
+    display: flex;           /* 기본 레이아웃은 가로 flex */
+    gap: 24px;
+    padding: 8px 12px;
+    margin: 0;
+    list-style: none;
+    background: rgba(255,255,255,0.98);
+    border-radius: 6px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+    white-space: nowrap;
+
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;    /* 숨김 상태에서 클릭 방지 */
+    transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+    z-index: 1010;           /* menu-wrap보다 위 */
+}
+
+.menu-wrap:hover > ul.bar,
+.menu-wrap:focus-within > ul.bar,
+ul.bar:hover {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0);
+}
+
 ul { 
     margin-top: 50px; 
     margin-bottom: 100px; 
@@ -292,19 +136,15 @@ ul li {
     margin-left: 50px; 
     display: inline-block; 
     text-align:center; 
-}  */
-/* 
-.menu .bar { display:none; position:absolute; left:0; right:0; text-align:center; } 
-.menu .bar a { display:block; padding:5px; background:#666; color:#fff; } 
-.menu > li > a { display:block; padding:0 15px; background:#333; height:40px; line-height:40px; color:#fff; } 
-ul > li { position:relative; } 
-*/ 
-/* li.item1 { font-family: 'IBM Plex Sans KR', sans-serif; } 
+}
+
+li.item1 { font-family: 'IBM Plex Sans KR', sans-serif; } 
 li.item2 { font-family: 'Playfair Display', serif; } 
 li.item3 { font-family: 'IBM Plex Sans KR', sans-serif; } 
-li.item4 { font-family: 'DM Serif Display', serif; } 
+li.item4 { font-family: 'DM Serif Display', serif; }
+
 div#open summary:hover { color:green; background-color:transparent; text-decoration:underline; } 
-p.menu:.menu:after { display:block; content:''; clear:both; } ul > li:hover { display:block; } 
+
 a:link { color:green; background-color:transparent; text-decoration:none; } 
 a:visited { color:green; background-color:transparent; text-decoration:none; } 
-a:hover { color:green; background-color:transparent; text-decoration:underline; } */
+a:hover { color:green; background-color:transparent; text-decoration:underline; }
