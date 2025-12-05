@@ -148,3 +148,20 @@ div#open summary:hover { color:green; background-color:transparent; text-decorat
 a:link { color:green; background-color:transparent; text-decoration:none; } 
 a:visited { color:green; background-color:transparent; text-decoration:none; } 
 a:hover { color:green; background-color:transparent; text-decoration:underline; }
+
+p.menu:hover {
+    color: black;
+    font-weight: 700;
+}
+
+p.menu:hover + ul.bar {
+    display: flex !important;
+}
+
+ul.bar {
+    flex-direction: row;
+}
+
+ul.bar:hover {
+    display: flex !important;
+}
