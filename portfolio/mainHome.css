@@ -65,10 +65,10 @@ nav {
 } 
 
 .menu-wrap {
-    position: relative;       /* 필수: ul.bar가 이 기준으로 떠야 함 */
+    position: relative;      
     display: inline-block;
-    z-index: 1000;            /* 충분히 높게 설정 */
-    overflow: visible;
+    /* z-index: 1000;            
+    overflow: visible; */
 }
 
 p.menu { 
@@ -93,8 +93,8 @@ ul.bar {
     display: flex;
     position: absolute;
     left: 50%;
-    top: calc(100% + 8px);   /* p.menu 바로 아래 */
-    transform: translateX(-50%) translateY(6px);
+    top: 100%;
+    transform: translateX(-50%);
     gap: 24px;
     padding: 8px 12px;
     margin: 0 !important;
@@ -108,15 +108,13 @@ ul.bar {
     visibility: hidden;
     pointer-events: none;    /* 숨김 상태에서 클릭 방지 */
     transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
-    z-index: 99999;           /* menu-wrap보다 위 */
 }
 
-.menu-wrap:hover > ul.bar,
-ul.bar:hover {
+.menu-wrap:hover > ul.bar {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateX(-50%) translateY(0);
+    transform: translateX(-50%) translateY(6px);
 }
 
 ul { 
