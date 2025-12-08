@@ -35,7 +35,7 @@ details summary::marker { display: none; }
 div#open details .content {
   max-height: 0;           
   opacity: 0;
-  overflow: hidden;
+  overflow: visible;
   transform: translateY(-6px);
   transition: max-height 0.45s cubic-bezier(.2,.9,.25,1), 
               opacity 0.35s ease,
@@ -107,6 +107,7 @@ ul.bar {
     visibility: hidden;
     pointer-events: none;    /* 숨김 상태에서 클릭 방지 */
     transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
+    z-index: 99999;
 }
 
 .menu-wrap:hover > ul.bar {
