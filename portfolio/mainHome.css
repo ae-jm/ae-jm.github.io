@@ -111,7 +111,6 @@ ul.bar {
 }
 
 .menu-wrap:hover > ul.bar,
-p.menu:hover + ul.bar,
 ul.bar:hover {
     opacity: 1;
     visibility: visible;
