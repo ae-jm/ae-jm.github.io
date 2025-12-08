@@ -10,17 +10,15 @@ body {
 div.container { 
     color: black; 
     width: 1200px; 
-    margin-right: auto; 
-    margin-left: auto; 
-    margin-top: 200px; 
+    margin: 200px auto 0; 
     text-align: center; 
 } 
 
 div#open details {
-    height: auto;
-    max-height: none;
+    /* height: auto;
+    max-height: none; */
     overflow: visible;
-    transition: none;
+    /* transition: none; */
 }
 
 div#open summary { 
@@ -35,17 +33,16 @@ details summary::-webkit-details-marker { display: none; }
 details summary::marker { display: none; }
 
 div#open details .content {
-  max-height: 0;           /* 초기에는 가시 높이 없음 */
+  max-height: 0;           
   opacity: 0;
   overflow: hidden;
   transform: translateY(-6px);
   transition: max-height 0.45s cubic-bezier(.2,.9,.25,1), 
               opacity 0.35s ease,
               transform 0.35s ease;
-  will-change: max-height, opacity, transform;
+  /* will-change: max-height, opacity, transform; */
 }
 
-div#open details[open] > .content,
 div#open details[open] .content {
     max-height: 900px;
     opacity: 1;
@@ -77,15 +74,16 @@ p.menu {
     margin-top: 80px; 
     font-family: "Gowun Batang", serif; 
     font-size: 23px; 
-    letter-spacing: 2px; 
+    /* letter-spacing: 2px;  */
     color: dimgrey; 
     cursor: pointer;
-    padding: 6px 10px;       /* 살짝 패딩을 주어 hover 영역 확보(시각적 변경 최소) */
+    padding: 6px 10px;      
     border-radius: 4px;
     transition: color 0.18s ease, font-weight 0.12s ease;
 }
 
-p.menu:hover { 
+p.menu:hover,
+.menu-wrap:hover p.menu { 
     color: black; 
     font-weight: 700;
 }
@@ -96,14 +94,13 @@ ul.bar {
     left: 50%;
     top: calc(100% + 8px);   /* p.menu 바로 아래 */
     transform: translateX(-50%) translateY(6px);
-    display: flex;           /* 기본 레이아웃은 가로 flex */
     gap: 24px;
     padding: 8px 12px;
     margin: 0;
     list-style: none;
-    background: rgba(255,255,255,0.98);
+    /* background: rgba(255,255,255,0.98);
     border-radius: 6px;
-    box-shadow: 0 8px 18px rgba(0,0,0,0.06);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.06); */
     white-space: nowrap;
 
     opacity: 0;
@@ -114,7 +111,7 @@ ul.bar {
 }
 
 .menu-wrap:hover > ul.bar,
-.menu-wrap:focus-within > ul.bar,
+p.menu:hover + ul.bar,
 ul.bar:hover {
     opacity: 1;
     visibility: visible;
@@ -123,18 +120,16 @@ ul.bar:hover {
 }
 
 ul { 
-    margin-top: 50px; 
-    margin-bottom: 100px; 
-    flex-wrap: wrap; 
+    margin: 50px 0 100px; 
+    /* flex-wrap: wrap; 
     list-style-type: none; 
     text-align: center; 
-    color: black; 
+    color: black;  */
     font-size: 23px; 
     padding: 0; 
 } 
 ul li { 
-    margin-right: 50px; 
-    margin-left: 50px; 
+    margin: 0 50px;
     display: inline-block; 
     text-align:center; 
 }
@@ -149,6 +144,6 @@ div#open summary:hover { color:green; background-color:transparent; text-decorat
 a:link { color:green; background-color:transparent; text-decoration:none; } 
 a:visited { color:green; background-color:transparent; text-decoration:none; } 
 a:hover { color:green; background-color:transparent; text-decoration:underline; }
-
+/* 
 p.menu:hover { color: black; font-weight: 700; }
-.menu-wrap:hover p.menu { color:black; font-weight:700; }
+.menu-wrap:hover p.menu { color:black; font-weight:700; } */
