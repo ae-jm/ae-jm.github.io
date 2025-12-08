@@ -80,7 +80,6 @@ p.menu {
     color: dimgrey; 
     cursor: pointer;
     padding: 6px 10px;      
-    border-radius: 4px;
     transition: color 0.18s ease, font-weight 0.12s ease;
 }
 
@@ -120,7 +119,7 @@ ul.bar {
 }
 
 ul { 
-    margin: 50px 0 100px; 
+    margin: 0;
     /* flex-wrap: wrap; 
     list-style-type: none; 
     text-align: center; 
