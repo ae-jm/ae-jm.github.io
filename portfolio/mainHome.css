@@ -10,6 +10,7 @@ body {
 div.container { 
     color: black; 
     width: 1200px; 
+    height: auto;
     margin: 200px auto 0; 
     text-align: center; 
 } 
@@ -62,6 +63,8 @@ p.font2 {
 } 
 nav { 
     letter-spacing: 2px; 
+    margin-top: 20px;
+    margin-bottom: 0;
 } 
 
 .menu-wrap {
@@ -74,7 +77,6 @@ nav {
 p.menu { 
     font-family: "Gowun Batang", serif; 
     font-size: 23px; 
-    /* letter-spacing: 2px;  */
     color: dimgrey; 
     cursor: pointer;
     padding: 6px 10px;      
