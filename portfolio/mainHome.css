@@ -10,16 +10,13 @@ body {
 div.container { 
     color: black; 
     width: 1200px; 
-    height: auto;
-    margin: 200px auto 0; 
+    height: 100%;
+    margin: 200px auto; 
     text-align: center; 
 } 
 
 div#open details {
-    /* height: auto;
-    max-height: none; */
     overflow: visible;
-    /* transition: none; */
 }
 
 div#open summary { 
@@ -41,7 +38,6 @@ div#open details .content {
     transition: max-height 0.45s cubic-bezier(.2,.9,.25,1), 
                 opacity 0.35s ease,
                 transform 0.35s ease;
-  /* will-change: max-height, opacity, transform; */
 }
 
 div#open details[open] .content {
@@ -59,7 +55,6 @@ p.font2 {
     font-style: italic; 
     font-size: 35px; 
     font-weight: 300; 
-    margin-top: 12px;
 } 
 nav { 
     letter-spacing: 2px; 
@@ -79,7 +74,7 @@ p.menu {
     font-size: 23px; 
     color: dimgrey; 
     cursor: pointer;
-    padding: 6px 10px;      
+    padding: 6px 10px;
     transition: color 0.18s ease, font-weight 0.12s ease;
 }
 
@@ -95,7 +90,7 @@ ul.bar {
     left: 50%;
     top: 100%;
     transform: translateX(-50%);
-    gap: 24px;
+    gap: 30px;
     padding: 8px 12px;
     margin: 0 !important;
     list-style: none;
