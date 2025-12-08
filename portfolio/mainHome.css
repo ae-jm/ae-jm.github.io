@@ -128,7 +128,7 @@ ul {
     padding: 0; 
 } 
 ul li { 
-    margin: 0 50px;
+    margin: 0;
     display: inline-block; 
     text-align:center; 
 }
