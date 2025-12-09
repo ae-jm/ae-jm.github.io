@@ -65,6 +65,7 @@ nav {
 .menu-wrap {
     /* position: relative;       */
     display: inline-block;
+    text-align: center;
 }
 
 p.menu { 
@@ -86,7 +87,7 @@ ul.bar {
     display: flex;
     /* position: absolute; */
     justify-content: center;
-    left: 50%;
+    /* left: 50%; */
     top: 100%;
     transform: translateX(-50%);
     gap: 45px;
@@ -100,9 +101,9 @@ ul.bar {
 
     opacity: 0;
     visibility: hidden;
-    pointer-events: none;    /* 숨김 상태에서 클릭 방지 */
+    /* pointer-events: none; */
     transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
-    z-index: 99999;
+    /* z-index: 99999; */
 }
 
 .menu-wrap:hover ul.bar,
