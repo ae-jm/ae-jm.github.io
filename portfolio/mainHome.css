@@ -12,7 +12,8 @@ div.container {
     color: black; 
     width: 1200px; 
     height: 100%;
-    margin: 0 auto; 
+    justify-content: center;
+    margin: auto;
     text-align: center; 
 } 
 
@@ -113,10 +114,6 @@ ul.bar:hover {
 
 ul { 
     margin: 0;
-    /* flex-wrap: wrap; 
-    list-style-type: none; 
-    text-align: center; 
-    color: black;  */
     font-size: 23px; 
     padding: 0; 
 } 
@@ -136,6 +133,3 @@ div#open summary:hover { color:green; background-color:transparent; text-decorat
 a:link { color:green; background-color:transparent; text-decoration:none; } 
 a:visited { color:green; background-color:transparent; text-decoration:none; } 
 a:hover { color:green; background-color:transparent; text-decoration:underline; }
-/* 
-p.menu:hover { color: black; font-weight: 700; }
-.menu-wrap:hover p.menu { color:black; font-weight:700; } */
