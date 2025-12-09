@@ -63,10 +63,8 @@ nav {
 } 
 
 .menu-wrap {
-    position: relative;      
+    /* position: relative;       */
     display: inline-block;
-    /* z-index: 1000;            
-    overflow: visible; */
 }
 
 p.menu { 
@@ -111,8 +109,8 @@ ul.bar {
 ul.bar:hover {
     opacity: 1;
     visibility: visible;
-    pointer-events: auto;
-    transform: translateX(-50%) translateY(6px);
+    /* pointer-events: auto;
+    transform: translateX(-50%) translateY(6px); */
 }
 
 ul { 
