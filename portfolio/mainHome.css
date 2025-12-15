@@ -82,6 +82,7 @@ p.menu {
     color: dimgrey; 
     cursor: pointer;
     padding: 6px 10px;
+    margin-bottom: 0;
     transition: color 0.18s ease, font-weight 0.12s ease;
 }
 
