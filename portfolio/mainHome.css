@@ -12,8 +12,8 @@ div.container {
     color: black; 
     width: 1200px; 
     height: 100%;
-    /* justify-content: center;
-    margin: auto; */
+    justify-content: center;
+    margin: auto;
     text-align: center; 
 }
 div#open {
