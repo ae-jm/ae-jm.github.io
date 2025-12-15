@@ -17,6 +17,7 @@ div.container {
     text-align: center; 
 }
 div#open {
+    height: 500px;
     justify-content: center;
     margin: auto;
 }
