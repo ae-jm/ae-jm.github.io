@@ -110,26 +110,27 @@ ul.bar {
     transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
 }
 
-.menu-wrap:hover ul.bar:active {
+.menu-wrap:hover ul.bar {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transform: translateX(-50%) translateY(5px);
 }
 
-/* ul.bar:not(.active):hover,
+ul.bar:not(.active):hover,
 ul.bar:active {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transform: translateX(-50%) translateY(5px);
-} */
+}
 
 ul { 
     font-size: 23px; 
     padding: 0; 
 } 
 ul li { 
+    position: relative;
     display: inline-block; 
     text-align:center; 
 }
