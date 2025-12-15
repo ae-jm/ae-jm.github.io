@@ -109,7 +109,13 @@ ul.bar {
     transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
 }
 
-.menu-wrap:hover ul.bar,
+.menu-wrap:hover ul.bar {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(5px);
+}
+
 ul.bar:hover {
     opacity: 1;
     visibility: visible;
