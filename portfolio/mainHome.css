@@ -73,7 +73,17 @@ nav {
 .menu-wrap {
     position: relative;      
     display: inline-block;
-    text-align: center;
+    /* text-align: center; */
+}
+
+.menu-wrap::after {
+    content: "";
+    position: absolute;
+    top: 100%;           
+    left: 0;
+    width: 100%;
+    height: 18px;        
+    background: transparent;
 }
 
 p.menu { 
@@ -103,11 +113,11 @@ ul.bar {
     transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-.menu-wrap:focus-within p.menu { 
+.menu-wrap:hover p.menu { 
     color: black; 
     font-weight: 700;
 }
-.menu-wrap:focus-within ul.bar {
+.menu-wrap:hover ul.bar {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
