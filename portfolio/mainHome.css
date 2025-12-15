@@ -96,11 +96,10 @@ ul.bar {
     display: flex;
     position: absolute;
     left: 50%;
-    top: 100%;
     transform: translateX(-50%);
     gap: 45px;
     padding: 8px 12px;
-    margin: 0 !important;
+    margin-top: 0;
     list-style: none;
     white-space: nowrap;
 
@@ -108,7 +107,6 @@ ul.bar {
     visibility: hidden;
     pointer-events: none;
     transition: opacity 0.22s ease, transform 0.22s ease, visibility 0.22s;
-    /* z-index: 99999; */
 }
 
 .menu-wrap:hover ul.bar,
@@ -116,16 +114,14 @@ ul.bar:hover {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    transform: translateX(-50%) translateY(6px);
+    transform: translateX(-50%) translateY(5px);
 }
 
 ul { 
-    margin: 0;
     font-size: 23px; 
     padding: 0; 
 } 
 ul li { 
-    margin: 0;
     display: inline-block; 
     text-align:center; 
 }
