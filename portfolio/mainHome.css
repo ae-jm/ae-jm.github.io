@@ -16,7 +16,7 @@ div.container {
     text-align: center; 
 }
 div#open {
-    height: 500px;
+    max-height: 550px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -86,7 +86,6 @@ p.menu {
     transition: color 0.18s ease, font-weight 0.12s ease;
 }
 
-p.menu:hover,
 .menu-wrap:hover p.menu { 
     color: black; 
     font-weight: 700;
@@ -117,13 +116,13 @@ ul.bar {
     transform: translateX(-50%) translateY(5px);
 }
 
-ul.bar:not(.active):hover,
+/* ul.bar:not(.active):hover,
 ul.bar:active {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
     transform: translateX(-50%) translateY(5px);
-}
+} */
 
 ul { 
     font-size: 23px; 
