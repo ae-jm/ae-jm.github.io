@@ -78,9 +78,9 @@ a.img-tooltip {
 a.img-tooltip::after {
     content: attr(data-tooltip);
     position: absolute;
-    bottom: 110%;
-    left: 50%;
-    transform: translateX(-50%) translateY(4px);
+    top: 50%;
+    left: 105%;
+    transform: translateX(-50%) translateY(-4px);
 
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
@@ -97,8 +97,8 @@ a.img-tooltip::after {
 a.img-tooltip::before {
     content: "";
     position: absolute;
-    bottom: 100%;
-    left: 50%;
+    top: 50%;
+	left: 100%;
     transform: translateX(-50%);
     border: 6px solid transparent;
     border-top-color: rgba(0, 0, 0, 0.8);
@@ -109,7 +109,7 @@ a.img-tooltip::before {
 a.img-tooltip:hover::after,
 a.img-tooltip:hover::before {
     opacity: 1;
-    transform: translateX(-50%) translateY(-4px);
+    transform: translateX(-50%) translateY(4px);
 }
 
 ul.dot2 {
