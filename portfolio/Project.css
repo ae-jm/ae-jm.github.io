@@ -82,7 +82,7 @@ a.img-tooltip::after {
     position: absolute;
     top: 100%;
     left: calc(100% + 20px);
-    transform: translateY(-80%);
+    transform: translateY(-85%);
 
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
@@ -100,8 +100,8 @@ a.img-tooltip::before {
     content: "";
     position: absolute;
     top: 100%;
-	left: calc(100% + 14px);
-    transform: translateX(-80%);
+	left: calc(100% + 12px);
+    transform: translateX(-85%);
 
 	border-width: 6px;
 	border-style: solid;
