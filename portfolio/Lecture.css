@@ -12,7 +12,7 @@ body {
 div.menubar {
 	width: 1780px;
 	margin: 0 auto;
-	margin-bottom: 70px;
+	margin-bottom: 50px;
 }
 header {
 	font-family: 'DM Serif Display', serif;
@@ -90,17 +90,17 @@ details[open] > summary ~ * { animation:reveal 0.5s;}
 }
 
 .overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: inherit;
-            height: inherit;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background: rgb(0, 0, 0, 0.5);
-            opacity: 0;
-            transition: opacity 0.2s;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.2s;
 	}
 
 footer { 
