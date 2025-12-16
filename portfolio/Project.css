@@ -99,7 +99,7 @@ a.img-tooltip::after {
 a.img-tooltip::before {
     content: "";
     position: absolute;
-    top: 87%;
+    top: 88%;
 	left: calc(100% + 12px);
     transform: translateX(-85%);
 
