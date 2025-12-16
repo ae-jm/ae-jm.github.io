@@ -79,7 +79,7 @@ a.img-tooltip::after {
     content: attr(data-tooltip);
     position: absolute;
     top: 50%;
-    left: 105%;
+    left: calc(100% + 12px);
     transform: translateX(-50%) translateY(-4px);
 
     background: rgba(0, 0, 0, 0.8);
@@ -100,16 +100,21 @@ a.img-tooltip::before {
     top: 50%;
 	left: 100%;
     transform: translateX(-50%);
-    border: 6px solid transparent;
-    border-top-color: rgba(0, 0, 0, 0.8);
+
+	border-width: 6px;
+	border-style: solid;
+    border-color: transparent rgba(0, 0, 0, 0.85) transparent transparent;
 
     opacity: 0;
+	pointer-events: none;
     transition: opacity 0.25s ease;
 }
-a.img-tooltip:hover::after,
+a.img-tooltip:hover::after {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+}
 a.img-tooltip:hover::before {
     opacity: 1;
-    transform: translateX(-50%) translateY(4px);
 }
 
 ul.dot2 {
