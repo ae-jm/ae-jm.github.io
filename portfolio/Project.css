@@ -117,38 +117,39 @@ a.img-tooltip:hover::before {
 } */
 
 a.img-tooltip {
-  position: relative;
-  display: inline-flex;
-  align-items: center;
+	width: 440px;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
 }
 a.img-tooltip::after {
-  content: "사진 클릭 시 깃허브로 이동!";
-  position: absolute;
+    content: "사진 클릭 시 깃허브로 이동!";
+    position: absolute;
 
-  top: 100%;
-  left: 100%;
-  margin-left: 16px;
-  margin-top: -40px;
+    top: 100%;
+    left: 100%;
+    margin-left: 16px;
+    margin-top: -40px;
 
-  background: rgba(0, 0, 0, 0.9);
-  color: #fff;
-  padding: 10px 14px;
-  border-radius: 10px;
-  font-size: 13px;
-  white-space: nowrap;
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    white-space: nowrap;
 
-  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.25);
 
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s ease, transform 0.25s ease;
-  transform: translateY(4px);
-  z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    transform: translateY(4px);
+    z-index: 10;
 }
 
 a.img-tooltip:hover::after {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 ul.dot2 {
