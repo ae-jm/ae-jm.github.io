@@ -86,5 +86,5 @@ footer {
 
 a:link { color:black; background-color:transparent; text-decoration:none; }
 a:visited { color:black; background-color:transparent; text-decoration: none; }
-section#box a:hover { font-weight: 700px; font-size: 28px; }
+section#box a:hover { font-weight: 800px; font-size: 26px; }
 a.menu:hover { color:green; background-color:transparent; text-decoration:underline; }
