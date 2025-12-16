@@ -90,4 +90,4 @@ footer {
 
 a:link { color:black; background-color:transparent; text-decoration:none; }
 a:visited { color:black; background-color:transparent; text-decoration:none; }
-a:hover { color:black; background-color:transparent; text-decoration:underline; }
+a.menu:hover { color:green; background-color:transparent; text-decoration:underline; }
