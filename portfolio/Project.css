@@ -71,6 +71,46 @@ p.text-2 {
 	font-size: 17px;
 	font-weight: bold;
 }
+a.img-tooltip {
+    position: relative;
+    display: inline-block;
+}
+a.img-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 110%;
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 13px;
+    white-space: nowrap;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    z-index: 10;
+}
+a.img-tooltip::before {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 6px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.8);
+
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+a.img-tooltip:hover::after,
+a.img-tooltip:hover::before {
+    opacity: 1;
+    transform: translateX(-50%) translateY(-4px);
+}
 
 ul.dot2 {
     color: black;
